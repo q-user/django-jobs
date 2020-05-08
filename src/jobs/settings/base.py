@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django_celery_beat',
     'import_export',
     'django_json_widget',
+    'el_pagination',
 
     # Local apps
     'users.apps.UsersConfig',
@@ -97,9 +98,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Simferopol'
 
 USE_I18N = True
 
@@ -120,6 +121,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 THUMBNAIL_PRESERVE_FORMAT = True
+THUMBNAIL_COLORSPACE = None
+
 
 CACHES = {
     'default': {

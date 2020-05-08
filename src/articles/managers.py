@@ -173,7 +173,7 @@ class ArticleManager(TextAnalyseManagerMixin, models.Manager):
             obj.full_clean()
         except ValidationError as e:
             if 'hash' in e.error_dict or 'article' in e.error_dict:
-                logger.info(e, exc_info=True)
+                logger.info(e, exc_info=False)
                 return
             capture_message(e, level='exception')
 
