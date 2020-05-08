@@ -96,18 +96,21 @@ services:
         max-size: '10m'
         max-file: '1'
 
-  nginx-certbot:
+  nginx:
     restart: unless-stopped
     image: jonasal/nginx-certbot:latest
-    container_name: ncert_j
+    container_name: nginx
     ports:
       - 80:80
       - 443:443
     env_file:
       - config/.envfile
     volumes:
-      - ./config/nginx:/etc/nginx/user.conf.d:ro
-      - letsencrypt_j:/etc/letsencrypt
+      - ./src:/app
+      - ./config/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - letsencrypt:/etc/letsencrypt
+    depends_on:
+      - web
     logging:
       driver: "json-file"
       options:
@@ -117,4 +120,4 @@ services:
 volumes:
   db-data:
   redis:
-  letsencrypt_j:
+  letsencrypt:
