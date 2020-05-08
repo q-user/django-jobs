@@ -23,7 +23,6 @@ class RemoteJobPluginTest(TestCase):
 
         data = self.plugin.get_data()
         self.assertTrue(data)
-        self.assertIn('author', data[0])
         self.assertIn('url', data[0])
         self.assertIn('source_datetime', data[0])
         self.assertIn('text', data[0])
