@@ -159,3 +159,5 @@ LOGGING = {
         }
     }
 }
+
+TESTING_MODE = None

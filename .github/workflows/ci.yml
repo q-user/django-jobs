@@ -8,9 +8,47 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      POSTGRES_USER: test_db
+      POSTGRES_PASSWORD: test_db
+      POSTGRES_DB: test_db
     steps:
       - uses: actions/checkout@v1
+      - name: Setup test envfile
+        run: touch config/.envfile
       - name: Build the docker-compose stack
         run: docker-compose up -d
       - name: Check running containers
         run: docker ps -a
+  tests:
+    name: Test
+    runs-on: ubuntu-latest
+    env:
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      DB_PORT_5432_TCP_ADDR: localhost
+      POSTGRES_USER: test_db
+      POSTGRES_PASSWORD: test_db
+      POSTGRES_DB: test_db
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Setup test envfile
+        run: touch config/.envfile
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r config/requirements.txt
+      - name: Run tests
+        run: cd src && python manage.py test --settings=jobs.settings.test
+
+    services:
+      postgres:
+        image: postgres:12-alpine
+        env:
+          POSTGRES_USER: test_db
+          POSTGRES_PASSWORD: test_db
+          POSTGRES_DB: test_db
+        ports:
+          - 5432:5432
