@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block extra_head %}
+<title>Работа для Django программистов | django_jobs_ru</title>
+<meta name="description"
+      content="Вакансии и объявления Django Framework. Работа на полный день. Работа в офисе. Удаленная работа. Полная занятость. Частичная занятость.">
+{% endblock %}
+
+{% block main %}
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="/">Django вакансии</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item {% if request.resolver_match.view_name == 'contacts:contact-me' %}active{% endif %}">
+          <a class="nav-link" href="">Обратная связь</a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main" class="container">
+
+  <div class="row py-5">
+    <div class="btn-group offset-2" role="group" aria-label="Фильтр по языку">
+      <a type="button"
+         class="btn btn-secondary {% if active_lang == '' %}active{% endif %}"
+         aria-label="Все языки"
+         href="/">Все языки</a>
+      <a type="button"
+         class="btn btn-secondary {% if active_lang == 'ru' %}active{% endif %}"
+         aria-label="Русский"
+         href="?language=ru">Ru</a>
+      <a type="button"
+         class="btn btn-secondary {% if active_lang == 'en' %}active{% endif %}"
+         aria-label="Английский"
+         href="?language=en">En</a>
+    </div>
+  </div>
+
+  {% for object in object_list %}
+  <div class="row offset-md-2 d-flex">
+    <div class="col-md-2 d-none d-md-block article-logo py-md-3">
+      <div class="mb-4">
+        <small class="article-date">{{ object.source_datetime|date:"d E" }}</small>
+      </div>
+
+      <div class="col-sm-2">
+        {% if object.icon_url %}
+        {% thumbnail object.icon_url "100" as im %}
+        <img class="img-fluid" src="{{ im.url }}">
+        {% endthumbnail %}
+        {% elif object.source.icon %}
+        {% thumbnail object.source.icon "100" as im %}
+        <img class="img-fluid" src="{{ im.url }}">
+
+        {% endthumbnail %}
+        {% endif %}
+
+      </div>
+    </div>
+    <div class="col-md-8 mr-auto py-3">
+      <h1 class="article-header">
+        <a href="{{ object.url }}">{{ object.title }}</a>
+      </h1>
+      <div class="article">{{ object.formated_article|safe }}</div>
+    </div>
+    <div class="col-md-10 py-4">
+      <hr class="{{ css_hr_class }}">
+    </div>
+  </div>
+  {% endfor %}
+</main>
+{% endblock %}
+
+{% block script %}
+{{ block.super }}
+<script src="{% static 'el-pagination/js/el-pagination.js' %}"></script>
+{% endblock %}

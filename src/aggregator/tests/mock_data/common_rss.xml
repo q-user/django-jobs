@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Вакансии по запросу «django» на DOU.ua</title>
+        <link>https://jobs.dou.ua/vacancies/?utm_source=jobsrss&amp;search=django</link>
+        <description></description>
+        <atom:link href="https://jobs.dou.ua/vacancies/feeds/" rel="self"></atom:link>
+        <language>ru</language>
+        <lastBuildDate>Mon, 30 Apr 2018 10:56:20 +0300</lastBuildDate>
+        <item>
+            <title>Python Django Software Engineer в RetargetApp, от&amp;nbsp;$2500, Киев</title>
+            <link>https://jobs.dou.ua/companies/retargetapp/vacancies/51378/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;Мы продуктовая команда из Киева. Разрабатывает свой продукт в сфере eCommenre, являемся
+                Facebook Marketing Partner. Мы ищем Middle/Senior Python Engineer-а. Человека который владеет опытом в
+                веб разработке на Python, не администратор, но имеет хорошие навыки работы с базами данных и
+                Linux-подобными системами, способен принимать архитектурные решения(БД, API, дизайн приложений) и
+                помогать имплиментаровать их в жизнь. У нас понятный и прозрачный процесс разработки, очень
+                дружественная и открывая команда, понятно сформулированные задачи с продуманным и ясным в деталях
+                дизайном.&lt;/p&gt;
+
+                &lt;p&gt;Под опытным мы видим инженера владеющего следующими навыками:&lt;br&gt;— разработка на Python
+                от &lt;nobr&gt;3-х&lt;/nobr&gt; лет&lt;br&gt;— работа с Django или другим веб фреймворком&lt;br&gt;—
+                владение MySQL или PostgreSQL, умение анализировать и оптимизировать запросы&lt;br&gt;— написания тестов
+                &lt;br&gt;— владение Linux-системами и Docker на базвом уровне&lt;br&gt;— понимание Scrum методологии&lt;br&gt;—
+                работа в команде full-time&lt;/p&gt;
+
+                &lt;p&gt;Что реально нужно делать на этой позиции?&lt;br&gt;— Разрабатывать и поддерживать
+                веб-приложение на Django(API для SPA-приложения)&lt;br&gt;— Разрабатывать сопровождающие async сервисы и
+                скрипты&lt;br&gt;— Принимать участие в проектировании дизайна и API приложения и сервисов&lt;br&gt;—
+                Разрабатывать адимн-часть для приложения&lt;br&gt;— Писать рабочий понятный поддерживаемый код и тесты к
+                нему&lt;/p&gt;
+
+                &lt;p&gt;Наш стек: Python3.6, Django, MySQL, Golang(для high-load сервисов), ES6, ReactJS/Redux.&lt;/p&gt;
+
+                &lt;p&gt;Какие перспективы?&lt;br&gt;— Technical lead, CTO, опцион&lt;/p&gt;
+
+                &lt;p&gt;Предложение фул-тайм в офисе на Воздвиженке.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/retargetapp/vacancies/51378/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Mon, 30 Apr 2018 10:56:20 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/retargetapp/vacancies/51378/?1525074980</guid>
+        </item>
+        <item>
+            <title>Python/Django Developer в Django Stars, Киев</title>
+            <link>https://jobs.dou.ua/companies/django-stars/vacancies/8274/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— Практический опыт разработки web приложений от 3 лет;&lt;br&gt;— Уверенное и глубокое знание
+                Python и стандартной библиотеки;&lt;br&gt;— Уверенное и всеобъемлющее знание Django в целом и всех
+                составных частей в частности;&lt;br&gt;— Понимание принципов и основ работы Web (HTTP, REST,
+                WebSockets);&lt;br&gt;— Опыт работы с сопутствующими технологиями и инструментами (Celery,
+                ElasticSearch, Redis, memcached);&lt;br&gt;— Опыт и глубокие познания в принципах и проблемах отладки,
+                кеширования, производительности;&lt;br&gt;— Понимание принципов работы ORM, оптимизации запросов, работе
+                с базой данных на более глубоком уровне;&lt;br&gt;— Опыт работы с Django REST framework;&lt;br&gt;—
+                Отличное владение Git;&lt;br&gt;— Отличное знание Linux;&lt;br&gt;— Опыт написания различных (unit,
+                functional, acceptance, etc) тестов;&lt;br&gt;— Разговорный английский;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Знакомство с Frontend (JS, CSS, HTML);&lt;br&gt;— Работа с asyncio;&lt;br&gt;— Знакомство с
+                Ansible, Docker;&lt;br&gt;— Знакомство с NoSQL решениями;&lt;br&gt;— Опыт настройки и тюнинга Nginx,
+                uwsgi, PostgreSQL, HAProxy, Varnish, Docker, etc;&lt;br&gt;— Опыт работы с отличными от Django
+                фреймворками на Python;&lt;br&gt;— Знакомство с Agile/Scrum.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Работу за деньги на интересных проектах.&lt;br&gt;Сильную команду, здоровую атмосферу.&lt;br&gt;Обмен
+                опытом, профессиональное развитие.&lt;br&gt;Гибкий график и офис возле метро.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Django Stars is looking for experienced Python/Django Developer to build large-scale highload
+                web app from scratch with modern technology stack.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/django-stars/vacancies/8274/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Fri, 27 Apr 2018 14:06:36 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/django-stars/vacancies/8274/?1524827196</guid>
+        </item>
+        <item>
+            <title>Senior Full Stack (Django + Angular) Developer в MWDN, Киев, Харьков</title>
+            <link>https://jobs.dou.ua/companies/medical-ukraine-mwdn/vacancies/64262/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;MWDN company is looking for a self-motivated and goal oriented Senior Full Stack (Django +
+                Angular) Developer who would like to be a part of a team working on brand new startup projects for
+                foreign customers.&lt;/p&gt;
+
+                &lt;p&gt;Requirements&lt;br&gt;4+ years experience with Python/Django&lt;br&gt;2+ years experience with
+                AngularJS&lt;br&gt;Ability to do technical implementation design&lt;br&gt;SQL knowledge&lt;br&gt;English:
+                upper-intermediate, both oral and writing&lt;br&gt;Experience of direct communication with client&lt;br&gt;Be
+                a great partner for your team members&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;Will be a plus&lt;br&gt;6+ years experience with Webstack applications development&lt;br&gt;Ability
+                to do technical implementation design&lt;br&gt;Comfortable collaborating with HTML/CSS specialists to
+                develop complete front-end features&lt;br&gt;Experience working with GIT, Celery. Redis, MongoDB,
+                RabbitMQ and AWS&lt;br&gt;Experience with e-commerce, erp, accounting, payment and/or big data&lt;br&gt;BSc
+                in Computer Science, Engineering or a related subject&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We offer&lt;br&gt;Working with worldwide names (like BMW, Gett, McKesson) and technical
+                startups with challenging tasks&lt;br&gt;People-oriented management without bureaucracy&lt;br&gt;Friendly
+                climate inside the company — previous employees have come back often&lt;br&gt;Flexible working hours&lt;br&gt;Business
+                trips to customers&lt;br&gt;100% paid sick leave&lt;br&gt;Office near Naukova with own parking&lt;br&gt;Free
+                English courses&lt;br&gt;Paid participating in the sports events, own basketball court&lt;br&gt;Educational
+                budget&lt;br&gt;Salary above the market&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Expectations&lt;br&gt;Being an active and enthusiastic part of the team that will be looking to
+                contribute to our mission and strategy, happy to share the craziest ideas.&lt;br&gt;Constantly adding
+                value to experience of our customers by writing readable, testable and scalable code.&lt;br&gt;Taking
+                the time to deeply understand the problems and challenges users face and being the part of the solution
+                finding process.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;About the project&lt;br&gt;Yumble is a weekly subscription service that delivers healthy,
+                delicious fully-prepared meals specifically designed for kids.&lt;br&gt;Yumble solves the biggest daily
+                problem parents face: putting healthy food on the table (or in lunch boxes!) that kids actually want to
+                eat.&lt;br&gt;Yumble is the fastest growing kids meal company in the US. The NY Post and others have
+                described our direct-to-consumer meals as Happy Meals for a generation of parents who care about healthy
+                eating and free delivery.&lt;br&gt;Yumble founders include a Harvard Business School grad and the COO
+                and Co-founder of HelloFresh US, and our investors include some of the most prominent tech and food
+                venture capitalists in the country.&lt;br&gt;Yumble has been covered in TechCrunch, The New York Post,
+                Us Weekly, among many other parenting and business publications.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/medical-ukraine-mwdn/vacancies/64262/#reply-btn-id"&gt;Откликнуться
+                на вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Wed, 25 Apr 2018 14:14:29 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/medical-ukraine-mwdn/vacancies/64262/?1524654869</guid>
+        </item>
+        <item>
+            <title>Full stack developer (Django + Angular) в SkySoft.tech, Винница</title>
+            <link>https://jobs.dou.ua/companies/skysoft-tech/vacancies/64152/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;Requirements:&lt;br&gt;· Django web development — 4+ years’ experience (2+ also acceptable has
+                robust 6+ years server side and web experience).&lt;br&gt;· AngularJS — 2+ years’ experience.&lt;br&gt;·
+                Self-started, fast learner with the ability to work independently and with others.&lt;br&gt;· Ability to
+                do technical implementation design.&lt;br&gt;· SQL knowledge.&lt;br&gt;· Very good English communication
+                skills (would probably working daily and directly with English speaking team).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;Advantages:&lt;br&gt;· Web stack applications development — 6+ years’ experience.&lt;br&gt;·
+                Comfortable collaborating with HTML/CSS specialists to develop complete front-end features.&lt;br&gt;·
+                Experience working with GIT, Celery. Redis, MongoDB, RabbitMQ and AWS.&lt;br&gt;· Experience with
+                e-commerce, erp, accounting, payment and/or big data.&lt;br&gt;· BSc in Computer Science, Engineering or
+                a related subject.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Expectations:&lt;br&gt;· Being an active and enthusiastic part of the team that will be looking
+                to contribute to our mission and strategy, happy to share the craziest ideas.&lt;br&gt;· Constantly
+                adding value to experience of our customers by writing readable, testable and scalable code.&lt;br&gt;·
+                Taking the time to deeply understand the problems and challenges users face and being the part of the
+                solution finding process.&lt;/p&gt;
+
+                &lt;p&gt;Expected day-to-day:&lt;br&gt;· Weekly feature review meetings — via video chat.&lt;br&gt;·
+                Weekly sprint planning / adjustment meetings — via video chat.&lt;br&gt;· Daily standup meeting (Scrum
+                style) via video chat / text chat.&lt;br&gt;· We prefer working in weekly sprints, deploying every two
+                weeks.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;The project is connected with the order of food for children for events&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/skysoft-tech/vacancies/64152/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 24 Apr 2018 14:04:30 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/skysoft-tech/vacancies/64152/?1524567870</guid>
+        </item>
+        <item>
+            <title>Python/Django developer в Speak With A Geek, Киев</title>
+            <link>https://jobs.dou.ua/companies/speak-with-a-geek/vacancies/61810/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— 3 years experience with Django&lt;br&gt;— Rest API understanding&lt;br&gt;— Experience with
+                MySQL&lt;br&gt;— Knowledge of Memcached&lt;br&gt;— Knowledge of JavaScript, jQuery&lt;br&gt;— Experience
+                with Git&lt;br&gt;— English Intermediate at least&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Understanding of Crypto currency Exchange&lt;br&gt;— Blockchain knowledge&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— comfortable office in the center of Kyiv&lt;br&gt;— opportunity to work in the international
+                environment&lt;br&gt;— flexible work hours&lt;br&gt;— competitive compensation&lt;br&gt;— passionate and
+                experienced team&lt;br&gt;— professional &amp;amp; career growth&lt;br&gt;— vacation and sick leaves&lt;br&gt;—
+                English classes with a native speaker&lt;br&gt;— paid lunch, snacks, fruits, sweets, tea/coffee&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;European based company want to extend the team that works on the oldest Cryptocurrency exchange
+                in the world from 2013. This is long-term ongoing product that is successfully released and with big
+                plans for the future development.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/speak-with-a-geek/vacancies/61810/#reply-btn-id"&gt;Откликнуться
+                на вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 24 Apr 2018 10:46:24 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/speak-with-a-geek/vacancies/61810/?1524555984</guid>
+        </item>
+        <item>
+            <title>Python/Django Developer в КОДBOҐ, Житомир</title>
+            <link>https://jobs.dou.ua/companies/codevog/vacancies/61719/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— Experience in Python development for 2 years.&lt;br&gt;— Experience of development of API
+                REST on Django.&lt;br&gt;— Experience in developing console applications.&lt;br&gt;— Knowledge of MySql,
+                PostgreSQL MongoDB.&lt;br&gt;— Knowledge of JSON, XML, SOAP formats.&lt;br&gt;— Excellent knowledge of
+                Linux.&lt;br&gt;— Knowledge of English (Pre-Intermediate and above).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Professional growth and development.&lt;br&gt;— Interesting projects.&lt;br&gt;— Competitive
+                salary.&lt;br&gt;— Cozy office in the city center.&lt;br&gt;— A friendly team.&lt;br&gt;— Flexible work
+                schedule.&lt;br&gt;— Timely payment at the rate of the NBU.&lt;br&gt;— English courses.&lt;br&gt;— Paid
+                holiday.&lt;br&gt;— Paid compensatory leave.&lt;br&gt;— Tea, coffee, fruit, sweets.&lt;br&gt;— Regular
+                corporate events.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Fintech SaS solutions in banking and investment field.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/codevog/vacancies/61719/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Mon, 23 Apr 2018 09:20:48 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/codevog/vacancies/61719/?1524464448</guid>
+        </item>
+        <item>
+            <title>Python/Django Web Developer в Preply, Киев</title>
+            <link>https://jobs.dou.ua/companies/preply/vacancies/53231/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;We are currently searching for a Python/Django Web Developer experienced, passionate about
+                vision and idea of our product. Working with our fast growing team will be challenging, but will
+                definitely deliver countless opportunities of your technical skills development.&lt;/p&gt;
+
+                &lt;p&gt;This person will join our one of our product or back-end teams and will help to create
+                exceptional learning experience for our students and tutors. This role will require tight cooperation
+                with all team members to make sure we all go in the same winning direction.&lt;/p&gt;
+
+                &lt;p&gt;Our Django developers work on all parts of our system from the improving of UX, to making our
+                API more robust, by integrating with 3rd party apps, working on performance optimization, integrating
+                state-of-the-art technologies loke GraphQL/AWS Lambda and much more. We have diverse technical
+                challenges that will allow you to develop your skills across the stack.&lt;/p&gt;
+
+                &lt;p&gt;Your competency profile:&lt;br&gt;• At least 2+ years experience developing web applications.&lt;br&gt;•
+                Strong knowledge of Python.&lt;br&gt;• Experience with Django web-framework is advantage.&lt;br&gt;• Web
+                services/API experiences.&lt;br&gt;• AWS experience is an additional strength.&lt;br&gt;• Basic
+                knowledge of JavaScript.&lt;br&gt;• Knowledge of the following web services will be a plus: Celery,
+                Tastypie, PyTest,&lt;br&gt;Nginx, DevOps.&lt;br&gt;• Strong communication skills.&lt;br&gt;• Min. B2
+                English level (company gives 200$/month for studying English on&lt;br&gt;&lt;a href="http://Preply.com"
+                target="_blank"&gt;Preply.com&lt;/a&gt;).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We offer:&lt;br&gt;• Cool tech stack: React/Redux/Apollo/GraphQL/Django/Python/Docker/AWS.&lt;br&gt;•
+                Working in a start-up business, being part of Silicon Valley Environment.&lt;br&gt;• Great team of
+                A-players.&lt;br&gt;• Awesome product that helps people learn more and faster.&lt;br&gt;• Agile
+                development process (we work in product squads, deliver updates daily).&lt;br&gt;• Official income, 21
+                working days of vacation, paid sick leaves, 2 remote days a month.&lt;br&gt;• The company with
+                world-class investors (including &lt;a href="http://booking.com" target="_blank"&gt;booking.com&lt;/a&gt;
+                co-founder).&lt;br&gt;• International team (we have native speakers of different languages on the
+                board).&lt;br&gt;• Flat interpersonal structure with no bureaucracy.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Your expected outcomes:&lt;br&gt;• Being an active and enthusiastic part of the team that will
+                be looking to contribute to our mission and strategy, happy to share the craziest ideas.&lt;br&gt;•
+                Constantly adding value to experience of our customers by writing readable, testable and efficient code.&lt;br&gt;•
+                Being able to develop back-end and database driven features using Python language and Django frameworks.&lt;br&gt;•
+                Taking the time to deeply understand the problems and challenges users face and being the part of the
+                solution finding process.&lt;/p&gt;
+
+                &lt;p&gt;To make a long story short, if you want to join another big story like &lt;a
+                href="http://Booking.com" target="_blank"&gt;Booking.com&lt;/a&gt;, Airbnb, Uber, Spotify, etc, do not
+                hesitate to contact us and let’s have a conversation.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Preply is a fast growing IT product company at an early stage of development, backed by
+                Europe’s most prominent investors. 90+ people are currently working on building a global human-to-human
+                online tutoring marketplace with locations in Kyiv and Berlin. &lt;/p&gt;
+
+                &lt;p&gt;Our team of more than 15+ nationalities onboard works in squads and practises continuous
+                scaling. We offer remote working days and possibility to use our platform for studying. We challenge
+                each other to learn more and faster, while promoting creative power and free will. Personal growth,
+                friendly and hierarchy-free atmosphere is guaranteed! &lt;/p&gt;
+
+                &lt;p&gt;We generate trust within and are able to make real impact on the company. Openness, high-speed
+                and global mindset are the main characteristics of our people. Our goal is to make Preply a leading
+                platform in online tutoring and inspire people from all over the world to learn faster!&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/preply/vacancies/53231/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Fri, 20 Apr 2018 15:11:31 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/preply/vacancies/53231/?1524226291</guid>
+        </item>
+        <item>
+            <title>Full stack Python/Django developer (Denmark, Ukraine) в Edgica, $2500–3500, Киев, за рубежом,
+                удаленно
+            </title>
+            <link>https://jobs.dou.ua/companies/edgica/vacancies/63956/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— Expert in Python 2/3&lt;br&gt;— At least 2 years’ experience developing in Django&lt;br&gt;—
+                Experience with Django REST Framework&lt;br&gt;— Angular/or similar javascript framework&lt;br&gt;— Good
+                with HTML/CSS&lt;br&gt;— Experience with AWS and/or Azure, version control (git), documentation, unit
+                testing&lt;br&gt;— Upper-intermediate at least in English, written and spoken&lt;br&gt;— Valid Ukrainian
+                biometric pass (or open Schengen visa) is a must.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We are looking for an experienced Python/Django developer with good Front-end skills to join
+                our team in a project for our partner in Denmark.&lt;br&gt;The task assumes onsite work in our partner’s
+                office (Denmark) at the beginning, at least &lt;nobr&gt;2-3&lt;/nobr&gt; months during project start-up,
+                with remote work afterwards and possible trips.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;The project is related to design and development of IoT platform for managing devices, data
+                analytics and visualization.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/edgica/vacancies/63956/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Fri, 20 Apr 2018 15:10:24 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/edgica/vacancies/63956/?1524226224</guid>
+        </item>
+        <item>
+            <title>Middle Python-программист с опытом использования Django в Exist.ua, Киев</title>
+            <link>https://jobs.dou.ua/companies/exist-ua/vacancies/63540/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;&lt;a href="http://EXIST.UA" target="_blank"&gt;EXIST.UA&lt;/a&gt; — самый большой в Украине
+                интернет-магазин по продаже автозапчастей и автоуслуг приглашает в свою команду &lt;br&gt;Middle
+                Python-программиста с опытом использования Django&lt;br&gt;Требования:&lt;br&gt;— Более 5 лет опыта в
+                разработке &lt;br&gt;— Отличные навыки разработки на python&lt;br&gt;— Опыт работы с Django/DRF&lt;br&gt;—
+                Опыт написания Unit тестов&lt;br&gt;— Опыт работы с MySQL, PostgresQL&lt;br&gt;— Опыт ведения проекта с
+                «0»&lt;br&gt;— Хорошие коммуникативные навыки&lt;br&gt;— Позитивный настрой&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;Опыт с ReactJS&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Рыночная, своевременная оплата.&lt;br&gt;Амбициозные/интересные задачи&lt;br&gt;Карьерное и
+                профессиональное развитие&lt;br&gt;Официальное оформление&lt;br&gt;Офис находится по адресу бульвар
+                Ивана Лепсе,4&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Разработка сайта &lt;a href="http://EXIST.UA" target="_blank"&gt;EXIST.UA&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;&lt;a href="http://EXIST.UA" target="_blank"&gt;EXIST.UA&lt;/a&gt; — самый большой в Украине
+                интернет-магазин по продаже автозапчастей и автоуслуг приглашает в свою команду руководителя отдела
+                эксплуатации автоматизированных систем&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/exist-ua/vacancies/63540/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Mon, 16 Apr 2018 10:36:05 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/exist-ua/vacancies/63540/?1523864165</guid>
+        </item>
+        <item>
+            <title>Python/Django developer в SteelKiwi, Одесса, Винница</title>
+            <link>https://jobs.dou.ua/companies/steelkiwi/vacancies/58599/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;h4&gt;Who we are.&lt;/h4&gt; &lt;h4&gt;
+
+                &lt;/h4&gt;&lt;p&gt;SteelKiwi is a US outsourcing company with two development centers in two beautiful
+                Ukrainian cities: Odessa and Vinnytsia. Our products are modern mobile and web applications. We use
+                Python/Django stack as a core of web development and all possible front-end tools to make our products
+                shine.&lt;br&gt;We are always looking to expand our team with people who share the same passion for
+                delivering the best results and for resting together after the effective performance. Are you ready?&lt;/p&gt;
+
+                &lt;p&gt; &lt;/p&gt;&lt;h4&gt;What do we need?&lt;/h4&gt;
+
+                &lt;p&gt;— experience with Python and Django not less than 2 years&lt;br&gt;— good knowledge of OOP&lt;br&gt;—
+                experience with MySQL, PostgreSQL&lt;br&gt;— knowledge of HTML5/CSS3/JavaScript/jQuery&lt;br&gt;—
+                experience with Git&lt;br&gt;— experience with *nix systems&lt;br&gt;— good knowledge of Celery,
+                RabbitMQ, MongoDB&lt;br&gt;— experience in API development with Django-rest-framework&lt;br&gt;— English
+                (intermediate)&lt;/p&gt;
+
+                &lt;h4&gt;Our Benefits:&lt;/h4&gt;
+
+                &lt;p&gt;— talented colleagues with a good sense of humor&lt;br&gt;— the exchange of experience&lt;br&gt;—
+                the feeling of the importance of what you do&lt;br&gt;— growth prospects for this position&lt;br&gt;—
+                free of charge English classes, paid events attendance&lt;br&gt;— purchase the necessary software,
+                release-party, pizza-party&lt;br&gt;— periodic review of the salary every six months&lt;br&gt;— purchase
+                a laptop or PC&lt;/p&gt;
+
+                &lt;p&gt;We believe that work can be a pleasure, so we are waiting for someone who shares our views.&lt;/p&gt;
+
+                &lt;h4&gt;Interview stages:&lt;/h4&gt; &lt;h4&gt;
+
+                &lt;/h4&gt;&lt;p&gt;Stage 1. Interview with HR (Skype or in person, if you want to see our office).&lt;br&gt;Stage
+                2. Interview with the head of the department (Tech Lead).&lt;br&gt;Stage 3. Interview with founder of
+                the company&lt;/p&gt;
+
+                &lt;p&gt;And then we make a decision within 5 days (approximately).&lt;/p&gt;
+
+                &lt;p&gt;If you`ve found yourself in these lines — we are looking forward your CV.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;SteelKiwi Inc. — американська аутсорсингова компанія, що надає послуги з розробки вебсайтів та
+                мобільних додатків, UI/UX дизайну та тестування. Працюємо з ринками Сполучених Штатів, Європи та
+                Середнього Сходу.&lt;/p&gt;
+
+                &lt;p&gt;Маємо 2 девелопмент-офіси в Україні (Вінниця, Одеса) та представництва в Словаччині,
+                Нідерландах та Ізраїлі. Спеціалізуємося на повному циклі розробки програмного забезпечення та
+                digital-продуктiв.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/steelkiwi/vacancies/58599/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Fri, 13 Apr 2018 14:57:12 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/steelkiwi/vacancies/58599/?1523620632</guid>
+        </item>
+        <item>
+            <title>Python Developer (Django, Twisted) в Fondy, $1000–2500, Киев</title>
+            <link>https://jobs.dou.ua/companies/oplatacom/vacancies/29407/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— 3+ опыта разработки на Python&lt;br&gt;— знание фреймворков Django — обязательно, Twisted,
+                asyncio — будет плюсом&lt;br&gt;— работа с RDBMS (Postres, MySQL), NoSQL (Redis, MongoDB),системами
+                обмена сообщениями (RabbitMQ)&lt;br&gt;— понимания принципов программирования асинхронных приложений&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— NoSQL (Redis, MongoDB),системами обмена сообщениями (RabbitMQ)&lt;br&gt;— работа с web-АПИ
+                (REST, XML)&lt;br&gt;— технический английский&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— работу в команде опытных специалистов, разрабатывающих высоконагруженный проект на стыке
+                финансов и технологий&lt;br&gt;— работа в продуктовой международной компании, где ты можешь видеть
+                результат своей работы, улучшать и непосредственно влиять на развитие компании&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Проект представляет собой backend (билинг) и frontend (Web UI/API), интегрированный с уже
+                существующими модулями и системами — финансовый сервис, ориентированный на Украину, Россию и Европу&lt;br&gt;Пример
+                того, что мы разрабатываем можно посмотреть тут: &lt;a
+                href="https://portal.fondy.eu/mportal/#/account/demo" target="_blank"&gt;portal.fondy.eu/mportal/#/account/demo&lt;/a&gt;&lt;br&gt;Это
+                портал для клиентов, который работает как клиентский шаблонизатор (JS), общающийся c бэкендом (Python)
+                посредством JSON API.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/oplatacom/vacancies/29407/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Thu, 12 Apr 2018 13:14:49 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/oplatacom/vacancies/29407/?1523528089</guid>
+        </item>
+        <item>
+            <title>Python/Django developer в KeyUA, Днепр</title>
+            <link>https://jobs.dou.ua/companies/keyua/vacancies/63280/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— Strong knowledge ООP&lt;br&gt;— Python, Django, JavaScript, jQuery, HTML5, CSS3&lt;br&gt;—
+                SQL, NoSQL DB&lt;br&gt;— SVN, GIT, Mercurial&lt;br&gt;— English Upper Intermediate&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Knowledge in algorithms, Python design patterns&lt;br&gt;— TDD&lt;br&gt;— Experience with
+                social networking APIs&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Competitive salary&lt;br&gt;— Paid vacation&lt;br&gt;— Office in Dnipro (Most CITY)&lt;br&gt;—
+                Long-term job&lt;br&gt;— Full-time job with flexible working hours &lt;nobr&gt;10-19 or&lt;/nobr&gt;
+                &lt;nobr&gt;09-18&lt;/nobr&gt; (1 hour break)&lt;br&gt;— Interesting projects with not trivial tasks&lt;br&gt;—
+                Experienced mentor&lt;br&gt;— Friendly and highly professional teams&lt;br&gt;— English classes&lt;br&gt;—
+                Corporate leisure activities&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We are a team of software developers, designers and product managers.&lt;br&gt;Our leaders have
+                their vision and strategy, that’s why they know what they do and in what way.&lt;br&gt;So, you will have
+                job, team, office in Most CITY, and, of course, how without tea and coffee.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/keyua/vacancies/63280/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Wed, 11 Apr 2018 16:41:57 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/keyua/vacancies/63280/?1523454117</guid>
+        </item>
+        <item>
+            <title>Python/Django Developer в TIW / Technologies Improving the World, $1700–2000, Киев</title>
+            <link>https://jobs.dou.ua/companies/technology-improving-the-world/vacancies/63261/?utm_source=jobsrss
+            </link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— 3+ года реализации веб-приложений Django;&lt;br&gt;— 3+ года опыта веб-разработки (html, css,
+                js);&lt;br&gt;— знание команд базы данных, производительности веб-приложений, состояния веб-приложений и
+                безопасности веб-приложений;&lt;br&gt;— знание шаблонов проектирования, структур данных и алгоритмов;&lt;br&gt;—
+                опыт создания веб — APIs.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— интересные и сложные задачи;&lt;br&gt;— гибкий график работы;&lt;br&gt;— профессиональную
+                команду разработки;&lt;br&gt;— отличные финансовые условия сотрудничества;&lt;br&gt;— комфортный офис в
+                центре города, рядом с метро.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Разработка новых функций для существующего приложения, построенного на Django 1.9;&lt;br&gt;—
+                Использование Python, Django для разработки новых функций веб-приложений;&lt;br&gt;— Внедрение
+                пользовательской бизнес-логики и интеграции с базовыми API и базами данных;&lt;br&gt;— Выполнение
+                аппаратного и сетевого устранения неисправностей;&lt;br&gt;— Разработка служб протоколов AMQP.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;TIW (Technologies Improving the World AG) — швейцарская высокотехнологичная инновационная
+                продуктовая компания со своим R&amp;amp;D центром в Украине. В ней создаются и разрабатываются такие
+                инновационные продукты как:&lt;br&gt;— мессенджер с функцией синхронного перевода Drotr (&lt;a
+                href="http://www.drotr.com" target="_blank"&gt;www.drotr.com&lt;/a&gt;);&lt;br&gt;— IoT сервис
+                мобильного контроля доступа к объектам недвижимости Ausweis (&lt;a href="http://www.ausweis.io"
+                target="_blank"&gt;www.ausweis.io&lt;/a&gt;).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/technology-improving-the-world/vacancies/63261/#reply-btn-id"&gt;Откликнуться
+                на вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Wed, 11 Apr 2018 15:13:13 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/technology-improving-the-world/vacancies/63261/?1523448793</guid>
+        </item>
+        <item>
+            <title>Front-end Developer ( React) в Django Stars, Киев</title>
+            <link>https://jobs.dou.ua/companies/django-stars/vacancies/63224/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;Skills required:&lt;br&gt;— Strong knowledge of JavaScript. You should be able to work on
+                complex projects without using frameworks&lt;br&gt;— Strong knowledge of React, Redux and the ecosystem
+                (redux-observable, reselect, react-router, redux-form)&lt;br&gt;— Knowledge of the functional
+                programming principles (lodash, rxjs)&lt;br&gt;— Familiarity with popular libraries that allow you to
+                complete common tasks faster (moment, d3 / c3, jQuery)&lt;br&gt;— Excellent knowledge of web
+                fundamentals: HTML, CSS, Bootstrap&lt;br&gt;— Experience with the development and automation tools (npm,
+                webpack, git, chrome dev tools, sass, postcss)&lt;br&gt;— Understanding the principles of building a
+                component architecture of the application&lt;br&gt;— Addiction to the clean code (standardjs, eslint,
+                flow)&lt;br&gt;— Ability to communicate in English&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;Would be a plus:&lt;br&gt;— Knowledge of React Native&lt;br&gt;— Knowledge of Polymer and Web
+                Components&lt;br&gt;— Understanding of the SSR principles (server-side rendering)&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We offer:&lt;/p&gt;
+
+                &lt;p&gt;Interesting projects mostly related but not limited to Finance &amp;amp; Banking, Travel &amp;amp;
+                Booking, Taxi &amp;amp; Transportation industries&lt;br&gt;Flexible schedule (say no to exhausting 9 —
+                18) &lt;br&gt;Cozy office located near the underground station&lt;br&gt;Crazy and friendly team of
+                people to work with and to learn from&lt;br&gt;English speaking club and grammar lessons&lt;br&gt;Gaming
+                zone&lt;br&gt;Conferences&lt;br&gt;Team buildings&lt;br&gt;A lot of challenges and fun&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/django-stars/vacancies/63224/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Wed, 11 Apr 2018 12:04:09 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/django-stars/vacancies/63224/?1523437449</guid>
+        </item>
+        <item>
+            <title>Middle/ Senior Full Stack (JS/Django) Developer в EchoUA, Львов</title>
+            <link>https://jobs.dou.ua/companies/echoua/vacancies/59262/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;• 4+ years experience in software engineering using Javascript (React.js), Django, Redux,
+                ES2015;&lt;br&gt;• SQL basic understanding;&lt;br&gt;• Understanding of how Python connects with R
+                programming language and other languages;&lt;br&gt;• Excellent communication skills in English;&lt;br&gt;•
+                Ability to work in a team environment.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;• Competitive salary based on results of job interview;&lt;br&gt;• Challenging tasks and
+                professional growth;&lt;br&gt;• Paid vacations, days off and sick leaves;&lt;br&gt;• PE (Private
+                Entrepreneur) accounting and support;&lt;br&gt;• Comfortable workplace, office kitchen and rest area;&lt;br&gt;•
+                Company English classes (50% compensation);&lt;br&gt;• Professional workshops and seminars attendance
+                (50% compensation);&lt;br&gt;• Regular outdoor activities and team buildings events;&lt;br&gt;•
+                Relocation assistance to nonresidential job seekers.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;• Development of new functionality for web application;&lt;br&gt;• Enhancement of user
+                interface for existing analytical tools;&lt;br&gt;• Offer suggestions for further product improvement
+                and new features;&lt;br&gt;• Learning of new technologies and its implementation in the project;&lt;br&gt;•
+                Daily communication with development team on side of Client.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;Project description: Python-based modeling platform that facilitates rapid construction,
+                evaluation and productionalization of large-scale, sophisticated financial models. It enables
+                quantitative analysts to hypothesize about, test and take action regarding predictive models used for
+                investing. &lt;/p&gt;
+
+                &lt;p&gt;Interesting: Client is from USA. You will be involved in work related to writing of software
+                for bigest USA investing Companies.&lt;/p&gt;
+
+                &lt;p&gt;Project technologies: Python, Django, SQL.&lt;/p&gt;
+
+                &lt;p&gt;Team: On site of client — 2 developers managed by CEO. On Ukrainian site — Back-End (Python/
+                SQL) developer and Fullstack (Javascript/Django) developer.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/echoua/vacancies/59262/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 10 Apr 2018 17:41:49 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/echoua/vacancies/59262/?1523371309</guid>
+        </item>
+        <item>
+            <title>Jun+/Middle Python/Django Geek в WeSoftYou, Киев</title>
+            <link>https://jobs.dou.ua/companies/wesoftyou/vacancies/59006/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— 1+ years of experience with Python (Django framework)&lt;br&gt;— Experience with REST APIs
+                (architecture design and DRF)&lt;br&gt;— Databases (PostgreSQL, MongoDB etc.)&lt;br&gt;— Caching, Tests&lt;br&gt;—
+                Git understanding&lt;br&gt;— Jira, Confluence, GitLab as a tools stack&lt;br&gt;— Ability to estimate
+                simple User Stories&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— use python asyncio, aiohttp, tornado or flask&lt;br&gt;— understanding how to build QuerySets
+                efficiently (no 3000 queries per page)&lt;br&gt;— experience working with highload projects&lt;br&gt;—
+                you can do some frontend stuff or at least understand how React.js works&lt;br&gt;— experience with
+                Golang&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— We have family environment;&lt;br&gt;— Freedom through responsibility approach;&lt;br&gt;—
+                Agile workload;&lt;br&gt;— Geek spirit;&lt;br&gt;— Passion for technology excellence;&lt;br&gt;—
+                Comfortable office in the heart of the city center;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Participates in weekly/bi-weekly grooming meeting. Contributes and participates in the
+                estimation of described tickets (TL is responsible but dev also participates)&lt;br&gt;— Develops tasks
+                assigned by TL and prioritized by PM. Aims to complete a task in full within estimate.&lt;br&gt;If CI
+                checks are NOT OK — the developer is responsible to fix the problem and make another PR to master&lt;br&gt;—
+                Fixes the code following review and possible comments from Team Lead (or CTO).&lt;br&gt;— Fixes possible
+                bugs following QA checks.&lt;br&gt;— We expect the developer to communicate to PM&amp;amp;TL if there is
+                a risk of delay to the task and ask for help in this situation.&lt;br&gt;— Participates in Daily Stand
+                Up meetings for all projects that he develops.&lt;br&gt;— Participates in Retrospective meetings on the
+                last day of Sprint and provides feedback to the team.&lt;br&gt;— Can sometimes participate in meeting
+                with clients&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;USA LAND SALES AUTOMATION PROJECT&lt;br&gt;— CRM System Client&lt;br&gt;— REST API&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/wesoftyou/vacancies/59006/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 10 Apr 2018 12:31:13 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/wesoftyou/vacancies/59006/?1523352673</guid>
+        </item>
+        <item>
+            <title>Full-stack Python/Django Web Developer (Middle+) в SoftFormance, Львов, удаленно</title>
+            <link>https://jobs.dou.ua/companies/softformance/vacancies/28604/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— 2+ years experience developing and deploying Python/Django websites&lt;br&gt;— HTML/CSS:
+                skills to quickly prototype page from mockup&lt;br&gt;— strong Javascript skills and experience working
+                with jQuery, Angular (or ReactJS);&lt;br&gt;— MySQL/PostgreSQL&lt;br&gt;— Git repository&lt;br&gt;—
+                English: intermediate level +&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Celery&lt;br&gt;— Redis&lt;br&gt;— MongoDB&lt;br&gt;— RabbitMQ&lt;br&gt;— Django Channels&lt;br&gt;—
+                Python Flask web framework&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— in-office or remote position with a flexible daily schedule&lt;br&gt;— competitive salary&lt;br&gt;—
+                Social Package and bunch of bonuses&lt;br&gt;— interesting and dynamic projects&lt;br&gt;— good team and
+                well-organized management processes&lt;br&gt;— regular career opportunities&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— develop and deploy high-quality Python/Django websites&lt;br&gt;— on time and on budget&lt;br&gt;—
+                write unit tests and technical docs&lt;br&gt;— participate in regular team meetings&lt;br&gt;— follow
+                internal management procedures&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We create digital marketing tools (AdTech and MarketingTech niches) for our clients from US and
+                Western Europe. Some projects are long-term while others take just &lt;nobr&gt;3-6 months.&lt;/nobr&gt;
+                Thus you’ll always have a chance to try different technologies and projects.&lt;/p&gt;
+
+                &lt;p&gt;To apply, please, send your cv to &lt;a href="mailto:hr@softformance.com"&gt;hr@softformance.com&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/softformance/vacancies/28604/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 10 Apr 2018 09:57:21 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/softformance/vacancies/28604/?1523343441</guid>
+        </item>
+        <item>
+            <title>Junior Python/Django Web Developer in Lviv в SoftFormance, Львов</title>
+            <link>https://jobs.dou.ua/companies/softformance/vacancies/43349/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;Please, do not apply if you are not from Lviv. At the moment, we’re considering junior
+                candidates only from Lviv and do not provide any relocation policy. Otherwise, your request would be
+                ignored.&lt;/p&gt;
+
+                &lt;p&gt;— 1 “close to real” project experience, developing and deploying Python/Django website(s)&lt;br&gt;—
+                HTML/CSS: skills to quickly prototype page from mockup&lt;br&gt;— strong Javascript skills and
+                experience working, at the very least, with jQuery&lt;br&gt;— MySQL/PostgreSQL&lt;br&gt;— Git repository&lt;br&gt;—
+                English: intermediate level&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Celery&lt;br&gt;— Redis&lt;br&gt;— MongoDB&lt;br&gt;— RabbitMQ&lt;br&gt;— Django Channels&lt;br&gt;—
+                Python Flask web framework&lt;br&gt;— Angular/React&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— in-office position in Lviv&lt;br&gt;— competitive salary&lt;br&gt;— Social Package and bunch
+                of bonuses&lt;br&gt;— interesting and dynamic projects&lt;br&gt;— good team and well-organized
+                management processes&lt;br&gt;— regular career opportunities&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="duty"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Обязанности
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— develop and deploy high-quality Python/Django websites&lt;br&gt;— on time and on a budget&lt;br&gt;—
+                write unit tests and technical docs&lt;br&gt;— participate in regular team meetings&lt;br&gt;— follow
+                the internal development and management procedures&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="project"&gt;
+                &lt;h3 class="g-h3"&gt;
+                О проекте
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;We work on different web projects for US and Western Europe clients. Some are long-term, others
+                take &lt;nobr&gt;3-6 months.&lt;/nobr&gt; So you’ll always have an opportunity to switch to the other
+                project after some time.&lt;/p&gt;
+
+                &lt;p&gt;To apply, please, send your cv to &lt;a href="mailto:hr@softformance.com"&gt;hr@softformance.com&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/softformance/vacancies/43349/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 10 Apr 2018 09:57:15 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/softformance/vacancies/43349/?1523343435</guid>
+        </item>
+        <item>
+            <title>Программист Python/Django в PixelTeh, $1000–3000, Запорожье</title>
+            <link>https://jobs.dou.ua/companies/pixelteh/vacancies/39325/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;В крупную компьютерную фирму (г. Запорожье) в связи с расширением деятельности, на постоянную
+                работу требуется Python/Django программист.&lt;/p&gt;
+
+                &lt;p&gt;Основные требования:&lt;/p&gt;
+
+                &lt;p&gt;— Python, ООП и понимание паттернов проектирования&lt;/p&gt;
+
+                &lt;p&gt;— Опыт работы с Django, Tornado, Twisted, Flask, Django REST&lt;/p&gt;
+
+                &lt;p&gt;— Реляционные базы данных (PostgreSQL, MySQL), хорошее знание SQL&lt;/p&gt;
+
+                &lt;p&gt;— RabbitMQ, Celery, Redis, MongoDB&lt;/p&gt;
+
+                &lt;p&gt;— HTML5/CSS3, SASS/LESS, Javascript&lt;/p&gt;
+
+                &lt;p&gt;— Опыт работы с Angular, React, Ember или Backbone будет плюсом&lt;/p&gt;
+
+                &lt;p&gt;— REST/SOAP, опыт реализации собственных API&lt;/p&gt;
+
+                &lt;p&gt;— Интеграция с платёжными системами (PayPal, Stripe), соц. сетями, Google Maps, Twilio&lt;/p&gt;
+
+                &lt;p&gt;— Git/SVN, Linux—администрирование&lt;/p&gt;
+
+                &lt;p&gt;— Опыт использования сервисов AWS/Heroku, работы с Docker/Vagrant&lt;/p&gt;
+
+                &lt;p&gt;— Оптимизации высоконагруженных проектов будет плюсом&lt;/p&gt;
+
+                &lt;p&gt;— Базовое знание английского&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Работу над интересными проектами&lt;/p&gt;
+
+                &lt;p&gt;— Дружный молодой коллектив&lt;/p&gt;
+
+                &lt;p&gt;— Высокую оплату труда&lt;/p&gt;
+
+                &lt;p&gt;— Премии&lt;/p&gt;
+
+                &lt;p&gt;— Пятидневную рабочую неделю, 8 часов в день&lt;/p&gt;
+
+                &lt;p&gt;— Помощь в переезде в Запорожье для иногородних (оплата проезда, помощь в поиске жилья);&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/pixelteh/vacancies/39325/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Mon, 09 Apr 2018 11:10:58 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/pixelteh/vacancies/39325/?1523261458</guid>
+        </item>
+        <item>
+            <title>Middle Python/Django Developer в СИИ УКРАИНА, Одесса</title>
+            <link>https://jobs.dou.ua/companies/ooo-kadkon-ukraina/vacancies/63045/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;• Bachelor’s or Master’s degree in Computer Science or similar&lt;br&gt;• good English language
+                skills&lt;br&gt;• HTML/CSS/Javascript&lt;br&gt;• Python (optimally mit Django)&lt;br&gt;• Unix-Systems&lt;br&gt;•
+                Various Webframeworks (Angular, ReactsJS, ...)&lt;br&gt;• Version control (GIT)&lt;br&gt;•
+                API-Development (optimally REST)&lt;br&gt;• Agile project techniques&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;• Skills in IOS and Android&lt;br&gt;• Skills in Unity and/or Unreal&lt;br&gt;• Skills in
+                WebGLL&lt;br&gt;• Experience with C++&lt;br&gt;• Knowledge about automation (continuous integration,
+                continuous delivery)&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/ooo-kadkon-ukraina/vacancies/63045/#reply-btn-id"&gt;Откликнуться
+                на вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Fri, 06 Apr 2018 16:10:10 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/ooo-kadkon-ukraina/vacancies/63045/?1523020210</guid>
+        </item>
+        <item>
+            <title>Python/Django Developer в Icemint Media, от&amp;nbsp;$1000, Запорожье</title>
+            <link>https://jobs.dou.ua/companies/icemint-media/vacancies/32621/?utm_source=jobsrss</link>
+            <description>&lt;div class="requirements"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Необходимые навыки
+                &lt;/h3&gt;
+                &lt;div class="text __r"&gt;
+                &lt;p&gt;— Опыт разработки web-приложений не менее 1 года.&lt;br&gt;— Уверенное знание Python.&lt;br&gt;—
+                Опыт разработки на Django, Flask.&lt;br&gt;— Хорошее знание JavaScript/jQuery, Ajax, JSON.&lt;br&gt;—
+                Опыт работы с базами данных MySQL/PostgreSQL/MongoDB.&lt;br&gt;— Опыт написания и использования RESTful
+                APIs (Django REST framework).&lt;br&gt;— Опыт работы с системами контроля версий Git.&lt;br&gt;— Умение
+                работать в команде и разбираться в чужом коде, готовность к обучению.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="additionalskils"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Будет плюсом
+                &lt;/h3&gt;
+                &lt;div class="text __a"&gt;
+                &lt;p&gt;— Знание веб-технологий: JavaScript, HTML и CSS.&lt;br&gt;— Знание английского языка (на уровне
+                достаточном для чтения документации).&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bonuses"&gt;
+                &lt;h3 class="g-h3"&gt;
+                Предлагаем
+                &lt;/h3&gt;
+                &lt;div class="text"&gt;
+                &lt;p&gt;— Достойная зарплата, бонусная система.&lt;br&gt;— Интересные проекты.&lt;br&gt;— Молодой,
+                опытный и дружественный коллектив.&lt;br&gt;— Кофе, чай, фрукты и любые снеки на выбор.&lt;br&gt;—
+                Комфортный офис и рабочее место.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                &lt;a href="http://jobs.dou.ua/companies/icemint-media/vacancies/32621/#reply-btn-id"&gt;Откликнуться на
+                вакансию&lt;/a&gt;
+                &lt;/div&gt;
+            </description>
+            <pubDate>Tue, 03 Apr 2018 13:42:20 +0300</pubDate>
+            <guid>https://jobs.dou.ua/companies/icemint-media/vacancies/32621/?1522752140</guid>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,42 @@
+{% load el_pagination_tags %}
+<!--{% load thumbnail %}-->
+
+{% paginate object_list %}
+{% for object in object_list %}
+	<div class="row offset-md-2 d-flex">
+		<div class="col-md-2 d-none d-md-block article-logo py-md-3">
+			<div class="mb-4">
+				<small class="article-date">{{ object.source_datetime|date:"d E" }}</small>
+			</div>
+<!--			<div class="col-sm-2">-->
+<!--				{% if object.icon_url %}-->
+<!--					{% thumbnail object.icon_url "70" as im %}-->
+<!--						<img class="article-img" src="{{ im.url }}">-->
+<!--					{% endthumbnail %}-->
+<!--				{% elif object.source.icon %}-->
+<!--					{% thumbnail object.source.icon.url "70" as im %}-->
+<!--						<img class="article-img" src="{{ im.url }}">-->
+<!--					{% endthumbnail %}-->
+<!--				{% endif %}-->
+<!--			</div>-->
+<!--					<div class="col-sm-2">-->
+<!--							{% if object.icon_url %}-->
+<!--									<img src="{{ object.icon_url }}"/>-->
+<!--							{% elif object.source.icon %}-->
+<!--									<img src="{{ object.source.icon.url }}"/>-->
+<!--							{% endif %}-->
+<!--						</div>-->
+		</div>
+		<div class="col-md-8 mr-auto py-3">
+			<h1 class="article-header">
+				<a href="{{ object.url }}">{{ object.title }}</a>
+			</h1>
+			<div class="article-text">{{ object.formated_article|safe }}</div>
+		</div>
+		<div class="col-md-10 py-4">
+			<hr class="{{ css_hr_class }}">
+		</div>
+	</div>
+{% endfor %}
+
+{% show_more class_name='btn btn-secondary' label='Загрузить ещё' %}
