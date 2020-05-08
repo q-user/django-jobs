@@ -1,9 +1,10 @@
 version: '3.7'
 
 services:
-  build:
-    context: .
-    dockerfile: Dockerfile
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: aggregator
     hostname: web
     command: bash -c "python manage.py collectstatic --noinput && python manage.py migrate --noinput && gunicorn jobs.wsgi:application --workers 1 --bind unix:/app/jobs.sock"
@@ -41,7 +42,7 @@ services:
   celery:
     image: aggregator
     working_dir: /app
-    command: bash -c "python -m nltk.downloader punkt && python -m nltk.downloader stopwords && celery -A jc.celery worker -l info"
+    command: bash -c "celery -A jobs.celery worker -l info"
     volumes:
       - ./src:/app
     env_file:
@@ -59,26 +60,26 @@ services:
         max-size: '10m'
         max-file: '1'
 
-    celery_beat:
-      image: aggregator
-      working_dir: /app
-      command: bash -c "python -m nltk.downloader punkt && python -m nltk.downloader stopwords && celery -A jc.celery beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
-      volumes:
-        - ./src:/app
-      env_file:
-        - config/.envfile
-      links:
-        - db
-        - redis
-      depends_on:
-        - redis
-        - web
-      restart: always
-      logging:
-        driver: "json-file"
-        options:
-          max-size: '10m'
-          max-file: '1'
+  celery_beat:
+    image: aggregator
+    working_dir: /app
+    command: bash -c "celery -A jobs.celery beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
+    volumes:
+      - ./src:/app
+    env_file:
+      - config/.envfile
+    links:
+      - db
+      - redis
+    depends_on:
+      - redis
+      - web
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: '10m'
+        max-file: '1'
 
   redis:
     image: redis:alpine
@@ -116,3 +117,4 @@ services:
 volumes:
   db-data:
   redis:
+  letsencrypt_j:
