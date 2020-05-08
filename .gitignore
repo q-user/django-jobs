@@ -85,6 +85,6 @@ ENV/
 .idea
 
 /src/static_root/
-src/media/
+src/media/cache
 src/celerybeat.pid
 config/.envfile
