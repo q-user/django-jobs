@@ -17,6 +17,7 @@ services:
     depends_on:
       - db
     restart: always
+    container_name: web
     logging:
       driver: "json-file"
       options:
@@ -75,6 +76,7 @@ services:
       - redis
       - web
     restart: always
+    container_name: beat
     logging:
       driver: "json-file"
       options:
