@@ -55,6 +55,7 @@ services:
       - redis
       - web
     restart: always
+    container_name: celery
     logging:
       driver: "json-file"
       options:
