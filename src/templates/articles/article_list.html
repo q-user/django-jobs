@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load thumbnail %}
+{% load urlparams %}
 
 {% block extra_head %}
   <title>Вакансии для Django программистов | django_jobs_ru</title>
@@ -24,11 +25,11 @@
         <a type="button"
            class="btn btn-secondary {% if active_lang == 'ru' %}active{% endif %}"
            aria-label="Русский"
-           href="?language=ru">Ru</a>
+           href="{% add_query_params request language='ru' %}">Ru</a>
         <a type="button"
            class="btn btn-secondary {% if active_lang == 'en' %}active{% endif %}"
            aria-label="Английский"
-           href="?language=en">En</a>
+           href="{% add_query_params request language='en' %}">En</a>
       </div>
     </div>
 
@@ -46,10 +47,10 @@
               {% endthumbnail %}
             {% elif object.source.icon %}
               {% thumbnail object.source.icon "100" as im %}
-                <img class="img-fluid" src="{{ im.url }}">
+                <a href="{% add_query_params request source=object.source.id %}">
+                  <img class="img-fluid" src="{{ im.url }}"></a>
               {% endthumbnail %}
             {% endif %}
-
           </div>
         </div>
         <div class="col-md-8 mr-auto py-3">

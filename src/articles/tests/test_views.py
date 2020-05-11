@@ -10,7 +10,6 @@ class HomeViewTest(TestCase):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
 
-    @factory.django.mute_signals(post_save)
     def test_view_filters_by_language(self):
         ArticleFactory(language="ru", active=True)
         ArticleFactory(language="en", active=True)

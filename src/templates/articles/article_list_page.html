@@ -1,5 +1,6 @@
 {% load el_pagination_tags %}
 {% load thumbnail %}
+{% load urlparams %}
 
 {% paginate object_list %}
 {% for object in object_list %}
@@ -14,7 +15,8 @@
         {% endthumbnail %}
       {% elif object.source.icon %}
         {% thumbnail object.source.icon "100" as im %}
-          <img class="img-fluid" src="{{ im.url }}">
+           <a href="{% add_query_params request source=object.source.id %}">
+             <img class="img-fluid" src="{{ im.url }}"></a>
         {% endthumbnail %}
       {% endif %}
     </div>

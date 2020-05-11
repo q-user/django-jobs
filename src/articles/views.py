@@ -38,9 +38,12 @@ class HomeView(AjaxListView):
         ).select_related('source').order_by('-source_datetime')
 
         # Filters section
-        language = self.request.GET.get('language', '')
-        if language:
+        language = self.request.GET.get('language', None)
+        if language is not None:
             qs = qs.filter(language=language)
 
-        return qs
+        source = self.request.GET.get('source', None)
+        if source is not None:
+            qs = qs.filter(source__id=source)
 
+        return qs
