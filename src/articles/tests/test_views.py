@@ -1,5 +1,3 @@
-import factory
-from django.db.models.signals import post_save
 from django.test import TestCase
 
 from articles.tests.factories import ArticleFactory

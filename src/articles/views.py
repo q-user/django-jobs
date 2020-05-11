@@ -2,6 +2,7 @@ import datetime
 
 from django.db.models import Q
 from django.shortcuts import render
+from django.views.generic import TemplateView
 from el_pagination.views import AjaxListView
 
 from articles.models import Article
