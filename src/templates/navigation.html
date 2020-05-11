@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand" href="/">Django вакансии</a>
+  <a class="navbar-brand" href="/">Объявления</a>
   <button class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -11,9 +11,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item {% if request.resolver_match.view_name == 'contacts:contact-me' %}active{% endif %}">
-        <a class="nav-link" href="">Обратная связь</a>
-
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'aggregator:stats' %}">Статистика</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/q-user/django-jobs">Github</a>
       </li>
     </ul>
   </div>
