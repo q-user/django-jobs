@@ -17,7 +17,7 @@ def forwards_func(apps, schema_editor):
         last_name='Pavlov',
         is_staff=True,
         is_superuser=True,
-        password=make_password('123')
+        password=make_password(os.environ.get('ADMIN_PASSWORD'))
     )
     user.save()
 
