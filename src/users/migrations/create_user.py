@@ -10,14 +10,13 @@ def forwards_func(apps, schema_editor):
     db_alias = schema_editor.connection.alias
 
     User = apps.get_model(settings.AUTH_USER_MODEL)
-    password = os.environ.get('ADMIN_PASSWORD')
     user = User.objects.using(db_alias).create(
         username='superuser',
         first_name='Mikhail',
         last_name='Pavlov',
         is_staff=True,
         is_superuser=True,
-        password=make_password(os.environ.get('ADMIN_PASSWORD'))
+        password=make_password(os.environ.get('ADMIN_PASSWORD', '123'))
     )
     user.save()
 
