@@ -11,7 +11,9 @@
       </div>
       {% if object.icon_url %}
         {% thumbnail object.icon_url "100" as im %}
-          <img class="img-fluid" src="{{ im.url }}">
+          <a href="{% add_query_params request source=object.source.id %}">
+            <img class="img-fluid" src="{{ im.url }}">
+          </a>
         {% endthumbnail %}
       {% elif object.source.icon %}
         {% thumbnail object.source.icon "100" as im %}
