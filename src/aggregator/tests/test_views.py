@@ -36,6 +36,5 @@ class DataSourceChangeViewTest(TestCase):
 
 class StatsViewTest(TestCase):
     def test_page_can_be_accessed(self):
-        pass
-        # response = self.client.get(reverse('aggregator:stats'))
-        # self.assertEqual(response.status_code, 200)
+        response = self.client.get(reverse('aggregator:stats'))
+        self.assertEqual(response.status_code, 200)

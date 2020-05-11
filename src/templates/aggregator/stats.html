@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block head %}
+<meta property="og:title" content="Статистика по источникам объявлений django_jobs_ru"/>
+<meta property="og:description" content="Статистика по источникам объявлений"/>
+
+<title>Статистика | django_jobs_ru</title>
+{% endblock %}
+
+{% block main %}
+{{ block.super }}
+<main role="main" class="container">
+  <div class="py-3">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Источник</th>
+        <th scope="col">За 7 дней</th>
+        <th scope="col">Всего</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for data_source in data_sources %}
+      <tr>
+        <td>
+          {% if data_source.total_count > 0 %}
+          <a href="/?source={{ data_source.id }}" title="Открыть список вакансий">
+            {% thumbnail data_source.icon "30" as im %}
+            <img class="article-img" src="{{ im.url }}">
+            {% endthumbnail %}
+            <span>{{ data_source.title }}</span>
+          </a>
+          {% else %}
+          {% thumbnail data_source.icon "30" as im %}
+          <img class="article-img" src="{{ im.url }}">
+          {% endthumbnail %}
+          <span>{{ data_source.title }}</span>
+          {% endif %}
+        </td>
+        <td>{{ data_source.week_count }}</td>
+        <td>{{ data_source.total_count }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</main>
+{% endblock %}
