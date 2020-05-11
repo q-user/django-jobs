@@ -29,6 +29,6 @@ class StatsView(TemplateView):
             "data_sources": DataSource.objects.annotate(
                 week_count=Count('articles', filter=Q(articles__timestamp__gte=week_delta)),
                 total_count=Count('articles'),
-            )
+            ).order_by('-week_count')
         })
         return context
