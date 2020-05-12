@@ -18,3 +18,9 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT_5432_TCP_PORT', '5432')
     }
 }
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
