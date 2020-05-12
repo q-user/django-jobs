@@ -2,6 +2,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from aggregator.tests.factories import DataSourceFactory
+from articles.models import Article
 from articles.tests.factories import ArticleFactory
 
 
@@ -26,15 +27,20 @@ class HomeViewTest(TestCase):
         source = DataSourceFactory()
         ArticleFactory.create_batch(2)
         ArticleFactory.create_batch(
-            2, source=source
+            2, source=source, active=True
         )
 
-        url = f"{reverse('aggregator:stats')}?source={source.id}"
+        url = f"{reverse('home')}?source={source.id}"
         response = self.client.get(url)
+        # Article
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.context_data['object_list'].count(),
+            2
+        )
 
     def test_wrong_source_parameter_ignored(self):
         ArticleFactory.create_batch(2)
-        url = f"{reverse('aggregator:stats')}?source=x"
+        url = f"{reverse('home')}?source=x"
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)

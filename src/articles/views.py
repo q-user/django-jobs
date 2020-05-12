@@ -2,7 +2,6 @@ import datetime
 
 from django.db.models import Q
 from django.shortcuts import render
-from django.views.generic import TemplateView
 from el_pagination.views import AjaxListView
 
 from articles.models import Article
@@ -44,7 +43,7 @@ class HomeView(AjaxListView):
             qs = qs.filter(language=language)
 
         source = self.request.GET.get('source', None)
-        if source is not None:
-            qs = qs.filter(source__id=source)
+        if source is not None and source.isnumeric():
+            qs = qs.filter(source__id=int(source))
 
         return qs

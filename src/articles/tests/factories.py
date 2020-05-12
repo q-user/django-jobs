@@ -13,7 +13,10 @@ class ArticleFactory(factory.DjangoModelFactory):
         tzinfo=timezone.get_current_timezone()
     )
     active = factory.Faker('pybool')
-    icon_url = factory.Faker('image_url')
+
+    # Disabled due to sorl-thumbnail download errors
+    # icon_url = factory.Faker('image_url')
+
     hash = factory.Faker('sha1')
 
     class Meta:
