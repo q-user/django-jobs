@@ -485,7 +485,7 @@
     "pk": 25,
     "fields": {
       "title": "github",
-      "image": "datasource_icons/github.svg",
+      "image": "datasource_icons/github.png",
       "image_url": "",
       "python_class": "aggregator.plugins.RssPlugin",
       "configuration": {
