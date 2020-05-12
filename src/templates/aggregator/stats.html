@@ -16,7 +16,7 @@
       <thead>
       <tr>
         <th scope="col">Источник</th>
-        <th scope="col">За 7 дней</th>
+        <th scope="col">За неделю</th>
         <th scope="col">Всего</th>
       </tr>
       </thead>
@@ -29,13 +29,13 @@
             {% thumbnail data_source.icon "30" as im %}
             <img class="article-img" src="{{ im.url }}">
             {% endthumbnail %}
-            <span>{{ data_source.title }}</span>
+            &nbsp;<span>{{ data_source.title }}</span>
           </a>
           {% else %}
           {% thumbnail data_source.icon "30" as im %}
           <img class="article-img" src="{{ im.url }}">
           {% endthumbnail %}
-          <span>{{ data_source.title }}</span>
+          &nbsp;<span>{{ data_source.title }}</span>
           {% endif %}
         </td>
         <td>{{ data_source.week_count }}</td>
