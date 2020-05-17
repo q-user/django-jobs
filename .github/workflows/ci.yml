@@ -19,7 +19,7 @@ jobs:
         run: docker-compose up -d
       - name: Check running containers
         run: docker ps -a
-  tests:
+  test:
     name: Test
     runs-on: ubuntu-latest
     env:
@@ -42,6 +42,7 @@ jobs:
           pip install -r config/requirements.txt
       - name: Run tests
         run: cd src && python manage.py test --settings=jobs.settings.test
+
     services:
       postgres:
         image: postgres:12-alpine
@@ -55,12 +56,35 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    on:
-      push:
-        - master
+    needs: test
+    if: github.ref == 'refs/heads/master'
+    env:
+      DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
+      ENVFILE: ${{secrets.ENVFILE}}
+      PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
+      DEPLOY_KNOWN_HOST: ${{secrets.DEPLOY_KNOWN_HOST}}
     steps:
-      - name: Remove project folder
-        run: ssh -p22 user@$DEPLOY_HOST "rm -rf ~/project && mkdir -p ~/project"
-
-
-
+      - uses: actions/checkout@v1
+      - name: Install utilities
+        run: |
+          which rsync || ( apt-get update && apt-get install rsync )
+          which zip || ( apt-get update && apt-get install zip )
+          which ssh-agent || ( apt-get update && apt-get install openssh-client )
+      - name: Setup ssh key
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${PRIVATE_KEY}" > ../private.key
+          sudo chmod 600 ../private.key
+          echo "${DEPLOY_KNOWN_HOST}" > ~/.ssh/known_hosts
+      - name: Update remote project files
+        run: |
+          ssh -i ../private.key user@${DEPLOY_HOST} "rm -rf ~/dj && mkdir -p ~/dj"
+          rsync -avz --exclude=.git -e "ssh -i ../private.key" . user@${DEPLOY_HOST}:~/dj
+      - name: Create envfile
+        run: |
+          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj/config && touch .envfile"
+          echo ${ENVFILE} | ssh -i ../private.key user@${DEPLOY_HOST} "tr ' ' '\n' | cat > dj/config/.envfile"
+      - name: Run docker-compose
+        run: |
+          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && chmod +x container-utility.sh && bash container-utility.sh --reset"
+          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && docker-compose up -d"
