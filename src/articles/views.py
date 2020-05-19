@@ -1,7 +1,9 @@
-import datetime
+from datetime import timedelta
 
 from django.db.models import Q
 from django.shortcuts import render
+from django.utils import timezone
+from django.utils.datetime_safe import date
 from el_pagination.views import AjaxListView
 
 from articles.models import Article
@@ -18,7 +20,7 @@ class HomeView(AjaxListView):
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
-        today = datetime.date.today()
+        today = date.today()
         if today.isoweekday() == 7:
             css_hr_class = "divider-sunday"
         else:
@@ -33,6 +35,9 @@ class HomeView(AjaxListView):
 
     def get_queryset(self):
         qs = super(HomeView, self).get_queryset()
+
+        qs = qs.filter(timestamp__gte=timezone.now()-timedelta(days=10))
+
         qs = qs.exclude(
             Q(text=None) | Q(active=False)
         ).select_related('source').order_by('-source_datetime')

@@ -1,0 +1,1 @@
+![CI](https://github.com/q-user/django-jobs/workflows/CI/badge.svg?branch=master)
