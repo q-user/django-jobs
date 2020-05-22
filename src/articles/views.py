@@ -36,7 +36,7 @@ class HomeView(AjaxListView):
     def get_queryset(self):
         qs = super(HomeView, self).get_queryset()
 
-        qs = qs.filter(timestamp__gte=timezone.now()-timedelta(days=10))
+        qs = qs.filter(timestamp__gte=timezone.now()-timedelta(days=7))
 
         qs = qs.exclude(
             Q(text=None) | Q(active=False)
