@@ -62,7 +62,6 @@ jobs:
       DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
       ENVFILE: ${{secrets.ENVFILE}}
       PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
-      DEPLOY_KNOWN_HOST: ${{secrets.DEPLOY_KNOWN_HOST}}
     steps:
       - uses: actions/checkout@v1
       - name: Install utilities
