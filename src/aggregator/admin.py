@@ -25,8 +25,6 @@ class DataSourceAdmin(ImportExportMixin, admin.ModelAdmin):
     fields = ('id', 'title', 'icon', 'icon_url', 'plugin', 'configuration', 'task')
     list_display_links = ('id', 'title')
     readonly_fields = ('id',)
-    # add_form_template = 'admin/datasource_change_form.html'
-    # change_form_template = 'admin/datasource_change_form.html'
 
     resource_class = DataSourceResource
 
