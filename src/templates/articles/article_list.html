@@ -18,7 +18,7 @@
         <a type="button"
            class="btn btn-secondary {% if active_lang == '' %}active{% endif %}"
            aria-label="Все языки"
-           href="/">Все языки</a>
+           href="{% remove_query_params request 'language' %}">Все языки</a>
         <a type="button"
            class="btn btn-secondary {% if active_lang == 'ru' %}active{% endif %}"
            aria-label="Русский"
