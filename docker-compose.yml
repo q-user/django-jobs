@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: aggregator
     hostname: web
-    command: bash -c "python manage.py collectstatic --noinput && python manage.py migrate --noinput && gunicorn jobs.wsgi:application --workers 1 --bind unix:/app/jobs.sock"
+    command: sh -c "python manage.py collectstatic --noinput && python manage.py migrate --noinput && gunicorn jobs.wsgi:application --workers 1 --bind unix:/app/jobs.sock"
     volumes:
       - ./src:/app
     env_file:
@@ -43,7 +43,7 @@ services:
   celery:
     image: aggregator
     working_dir: /app
-    command: bash -c "celery -A jobs.celery worker -l info"
+    command: sh -c "celery -A jobs.celery worker -l info"
     volumes:
       - ./src:/app
     env_file:
@@ -65,7 +65,7 @@ services:
   celery_beat:
     image: aggregator
     working_dir: /app
-    command: bash -c "celery -A jobs.celery beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
+    command: sh -c "celery -A jobs.celery beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
     volumes:
       - ./src:/app
     env_file:
