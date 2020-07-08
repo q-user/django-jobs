@@ -1,3 +1,7 @@
+import sentry_sdk
+from sentry_sdk.integrations.celery import CeleryIntegration
+from sentry_sdk.integrations.django import DjangoIntegration
+
 from .base import *
 
 ALLOWED_HOSTS = ['django-jobs.ru', 'www.django-jobs.ru']
@@ -31,3 +35,8 @@ CACHES = {
         }
     }
 }
+
+sentry_sdk.init(
+    dsn="https://27cc7e4bfde942fbb98a879dde429a93@o80847.ingest.sentry.io/176021",
+    integrations=[DjangoIntegration(), CeleryIntegration()]
+)
