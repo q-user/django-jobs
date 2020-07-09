@@ -31,7 +31,7 @@
     </div>
 
     {% for object in object_list %}
-      <div class="row offset-md-2 d-flex">
+      <div class="row  d-flex">
         <div class="col-md-2 d-none d-md-block article-logo py-md-3">
           <div class="mb-4">
             <small class="article-date">{{ object.source_datetime|date:"d E" }}</small>
@@ -52,13 +52,13 @@
             {% endif %}
           </div>
         </div>
-        <div class="col-md-8 mr-auto py-3">
+        <div class="col-md-9 mr-auto py-3">
           <h1 class="article-header">
             <a target="_blank" href="{{ object.url }}">{{ object.title }}</a>
           </h1>
           <div class="article">{{ object.formated_article|safe }}</div>
         </div>
-        <div class="col-md-10 py-4">
+        <div class="col-md-12 py-4">
           <hr class="{{ css_hr_class }}">
         </div>
       </div>
