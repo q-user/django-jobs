@@ -23,7 +23,7 @@
 }
 
 .article-header {
-    font-size: 23px;
+    font-size: 30px;
     margin-bottom: 28px;
     margin-top: -5px;
 }
@@ -46,7 +46,7 @@ a, .source-link:hover {
 
 .article {
     margin-left: 25px;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .article img {
