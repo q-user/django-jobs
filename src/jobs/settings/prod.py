@@ -39,7 +39,7 @@ CACHES = {
 }
 
 sentry_sdk.init(
-    dsn="https://27cc7e4bfde942fbb98a879dde429a93@o80847.ingest.sentry.io/176021",
+    dsn=os.environ.get('SENTRY_URL', None),
     integrations=[
         DjangoIntegration(),
         CeleryIntegration(),
