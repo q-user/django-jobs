@@ -79,6 +79,11 @@ def weekly_report():
     )
 
 
+@shared_task
+def clear_thumbnails():
+    call_command('thumbnail', 'clear_delete_all')
+
+
 celery_app.conf.beat_schedule = {
     'backup_data': {
         'task': 'articles.tasks.backup_data',
@@ -88,4 +93,8 @@ celery_app.conf.beat_schedule = {
         'task': 'articles.tasks.weekly_report',
         'schedule': crontab(day_of_week='1', minute='0', hour='0')
     },
+    'clear_thumbnails': {
+        'task': 'articles.tasks.clear_thumbnails',
+        'schedule': crontab(minute='0', day_of_week='*', hour='6')
+    }
 }
