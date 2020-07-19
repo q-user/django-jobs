@@ -20,8 +20,8 @@ DATABASES = {
 
 DROPBOX_TOKEN = os.environ.get('DROPBOX_TOKEN', '')
 
-DEBUG = os.environ.get('DEBUG', False)
-THUMBNAIL_DEBUG = os.environ.get('DEBUG', False)
+DEBUG = bool(os.environ.get('DEBUG', False))
+THUMBNAIL_DEBUG = bool(os.environ.get('DEBUG', False))
 
 CELERY_BROKER_URL = os.environ.get('REDIS_URL_0', 'redis://localhost:6379/0')
 CELERY_ACCEPT_CONTENT = ['application/json']
