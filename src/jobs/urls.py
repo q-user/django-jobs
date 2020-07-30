@@ -7,7 +7,7 @@ from articles.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('aggregator/', include('aggregator.urls', namespace='aggregator')),
+    path('', include('aggregator.urls', namespace='aggregator')),
     path('', HomeView.as_view(), name='home')
 ]
 
