@@ -127,7 +127,7 @@ THUMBNAIL_COLORSPACE = None
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://localhost:6379/0',
+        'LOCATION': os.environ.get('REDIS_URL_1', 'redis://localhost:6379/1'),
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient'
         }
