@@ -4,9 +4,9 @@ from urllib.parse import urlsplit
 from urllib.request import urlretrieve
 
 from django.conf import settings
-from django.contrib.postgres.fields import JSONField
 from django.core.validators import validate_image_file_extension
 from django.db import models
+from django.db.models import JSONField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils.module_loading import import_string
