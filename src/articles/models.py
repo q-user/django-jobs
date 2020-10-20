@@ -21,7 +21,7 @@ class Article(models.Model):
     title = models.CharField(max_length=250)
     timestamp = models.DateTimeField(auto_now_add=True)
     source_datetime = models.DateTimeField(auto_now_add=False, auto_now=False, null=True)
-    active = models.BooleanField(default=False)
+    active = models.BooleanField(default=True)
     language = models.CharField(max_length=15, null=True, blank=True)
     icon_url = models.URLField(null=True, blank=True)
     hash = models.CharField(

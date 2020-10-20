@@ -1,6 +1,5 @@
 from celery import shared_task
-from celery.task import PeriodicTask
-from django_celery_beat.models import IntervalSchedule
+from django_celery_beat.models import IntervalSchedule, PeriodicTask
 from sentry_sdk import capture_message
 
 from aggregator.models import DataSource
@@ -28,23 +27,10 @@ def aggregate_content(datasource_id=None):
             task.save()
         return
 
-    requires_classification = datasource.configuration.get('requires_classification', None)
-
     for d in data:
-        if requires_classification:
-            good_article = Article.objects.classify_article(
-                d.get('text'),
-                source=datasource
-            )
-            d.update({
-                'active': good_article
-            })
-        else:
-            d.update({
-                'active': True
-            })
         Article.objects.clean_create(
             source=datasource,
+            active=True,
             **d
         )
 
