@@ -18,5 +18,9 @@ RUN adduser --disabled-password --gecos '' user
 USER user
 RUN mkdir -p /var/tmp/django_cache && \
     chown user /var/tmp/django_cache && \
-    chgrp user /var/tmp/django_cache
+    chgrp user /var/tmp/django_cache && \
+    mkdir -p /app/media/cache && \
+    chown user /app/media/cache && \
+    chgrp user /app/media/cache
+
 
