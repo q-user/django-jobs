@@ -86,5 +86,6 @@ ENV/
 
 /src/static_root/
 src/media/cache/*
+!src/media/cache/.gitkeep
 src/celerybeat.pid
 config/.envfile
