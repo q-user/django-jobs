@@ -86,4 +86,4 @@ jobs:
       - name: Run docker-compose
         run: |
           ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && chmod +x container-utility.sh && bash container-utility.sh --reset"
-          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && docker-compose up -d"
+          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && docker-compose up -d --build"
