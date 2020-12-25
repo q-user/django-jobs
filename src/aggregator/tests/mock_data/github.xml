@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:jobs.github.com,2005:/positions</id>
+  <link rel="alternate" type="text/html" href="https://jobs.github.com"/>
+  <link rel="self" type="application/atom+xml" href="https://jobs.github.com/positions.atom?description=django"/>
+  <title>GitHub Jobs </title>
+  <updated>2020-12-16T10:51:05Z</updated>
+  <author>
+    <name>GitHub Jobs</name>
+    <email>jobs@github.com</email>
+  </author>
+  <entry>
+    <id>urn:uuid:3732cb0a-fbcb-48d4-a7f6-efe0e3550cef</id>
+    <published>2020-12-16T10:51:05Z</published>
+    <updated>2020-12-16T10:51:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/3732cb0a-fbcb-48d4-a7f6-efe0e3550cef"/>
+    <title>Senior Python Developer</title>
+    <content type="html">Gemeente Amsterdam heeft een vacature voor een
+
+**Senior Python Developer**
+32-36 uur
+
+**In het kort**
+* Wil je een bijdrage leveren aan applicaties die er écht toe doen? In een innovatieve overheidsomgeving waarin je werkt met de nieuwste technieken? Kom dan werken bij gemeente Amsterdam!
+* Werken aan een digitale stad door voorop te blijven lopen en creativiteit te tonen.
+
+**Zo draag je bij aan de gemeente Amsterdam**
+* Je werkt in een multidisciplinair Agile/Scrum team, in een moderne DevOps omgeving. Elk team bestaat, afhankelijk van het thema uit ervaren back-end developers, front-end developers, een UX designer, een product owner, en/of business/informatie analisten en een scrum master; 
+* Als developer zorg je, in samenspraak met je product owner, voor afstemming met de klant en je teamgenoten. Je geeft heldere en richtinggevende adviezen op het gebied van innovatie, ontwikkeling en onderhoud van de huidige applicaties; 
+* Je ontsluit data via RESTful API’s, met microservices die in Docker containers draaien. De data API’s zijn geschreven in Python, met behulp van frameworks als Django en Flask. De security services zijn geschreven in Golang en Python met aiohttp. Voor dataopslag gebruiken we vooral Postgres en Elasticsearch. Onze CI stack bestaat uit Jenkins en Ansible, en wij deployen continu naar productie. De Front-end developers ontwikkelen zoveel als mogelijk in React; 
+* We ontwikkelen volgens het ‘Open Source tenzij’ principe, streven naar een 100% test coverage, evenals secure programming; 
+* Een open communicatie vinden we belangrijk, net als een drankje drinken met elkaar (vanuit huis of in afstemming op locatie) op donderdagmiddag. 
+
+Als Senior Python Developer werk je aan applicaties of datatoepassingen die bijdragen aan een datagedreven stad. Je werkt aan het beschikbaar maken van (privacy gevoelige) data. Thema’s van de applicaties zijn bijvoorbeeld: drukte in de stad, Basis- en Kernregistraties, huisvesting en zorg. Concrete voorbeelden zijn bijvoorbeeld [www.meldingen.amsterdam.nl](https://www.meldingen.amsterdam.nl) en [www.data.amsterdam.nl](https://www.data.amsterdam.nl). 
+
+**Dit doe je op een gemiddelde werkdag**
+* Je werkt in een multidisciplinair Agile/Scrum team, in een moderne DevOps omgeving. Elk team bestaat, afhankelijk van het thema uit ervaren back-end developers, front-end developers, een UX designer, een product owner, en/of business/informatie analisten en een scrum master;
+* Als developer zorg je, in samenspraak met je product owner, voor afstemming met de klant en je teamgenoten. Je geeft heldere en richtinggevende adviezen op het gebied van innovatie, ontwikkeling en onderhoud van de huidige applicaties;
+* Je ontsluit data via RESTful API’s, met microservices die in Docker containers draaien. De data API’s zijn geschreven in Python, met behulp van frameworks als Django en Flask. De security services zijn geschreven in Golang en Python met aiohttp. Voor dataopslag gebruiken we vooral Postgres en Elasticsearch. Onze CI stack bestaat uit Jenkins en Ansible, en wij deployen continu naar productie. De Front-end developers ontwikkelen zoveel als mogelijk in React.
+
+**Waar kom je te werken?**
+De afdeling Onderzoek, Informatie en Statistiek (OIS) van gemeente Amsterdam verzamelt data over Amsterdam en verwerkt deze tot informatie. Van onderwerpen als de Amsterdamse bevolking, de woningvoorraad, de werkgelegenheid en de bedrijvigheid in de stad tot onderwerpen als veiligheid, verkiezingen, zorg en onderwijs. Ook ontwikkelt en beheert OIS de gemeentelijke datavoorziening DataPunt waarmee data en dataproducten beschikbaar zijn voor gemeente en publiek.
+
+Zo biedt de website Data en Informatie verschillende mogelijkheden om aan de slag te gaan met de beschikbare gegevens [www.data.amsterdam.nl](https://www.data.amsterdam.nl), en werkt team Data Services aan een generieke manier waarmee databronnen worden verwerkt en beschikbaar worden gesteld. Denk aan slimme verkeersroutes dankzij onderzoek met behulp van tijdelijke kentekencamera's, met machine learning meldingen openbare ruimte doorgeleiden of data-analyse om de kortste afstanden tot afval containers te berekenen. Hierbij maken we gebruik van zowel bewezen als nieuwe methodes en technieken. Denk aan Machine Learning oplossingen om stadsarchieven te indexeren of straatafval te herkennen, REST APIs en GraphQL voor dataontsluiting en Docker om onze applicaties in de cloud (migratie naar Microsoft Azure) te draaien. Bij ontwikkeling gaan we uit van “Open Source tenzij". Zodoende hebben we inmiddels bijna 230 publieke Github repositories online staan.
+
+**Dit breng je mee**
+Al onze collega’s verschillen. In functie, leeftijd, afkomst, karakter, dromen en hobby’s. Daar zijn we trots op, want al die verschillen zorgen voor betere resultaten voor onze stad. Dus wie jij ook bent: je bent welkom binnen onze gemeente. Voor deze functie Senior Python Developer zien we ook graag:
+* Minimaal een HBO werk- en denkniveau richting informatica of informatica-gerelateerd. Het werk- en denkniveau dient aangetoond te worden doormiddel van een diploma en/of werkervaring;
+* Minimaal zes jaar recente werkervaring als back-end developer;
+* Je hebt minimaal twee jaar recente werkervaring met python;
+* Minimaal vier jaar recente werkervaring opgedaan in een organisatie waarin met Agile/Scrum wordt gewerkt.
+
+*Competenties**
+* Omgevingsbewustzijn (Expert) 
+* Samenwerken (Expert); 
+* Relatiebeheer (Expert) 
+* Initiatief (Expert). 
+
+**Goed voor Amsterdam. Goed voor jou.**
+Als Senior Python Developer kom je ons 32-36 uur per week versterken en kun je rekenen op:
+* een bruto maandsalaris tussen € 4.279,- en € 5.872,- (schaal 12) op basis van een 36-urige werkweek. Het exacte salaris wordt afgestemd op de opleiding, kennis en ervaring die je meebrengt; 
+* een arbeidsovereenkomst voor bepaalde tijd voor de duur van de tijdelijke werkzaamheden, indien je nog niet in dienst bent bij gemeente Amsterdam. 
+* Uitstekende ontwikkel- en opleidingsmogelijkheden; 
+* een individueel keuzebudget (IKB) van 17,05% van jouw salaris dat je kunt gebruiken voor bijvoorbeeld extra pensioenopbouw, of extra verlofdagen; 
+* een pensioenregeling bij ABP, het pensioenfonds voor overheid en onderwijs; 
+* een reiskostenvergoeding van € 0,06 per kilometer, tot 30 kilometer enkele reis woon-werkafstand; 
+* flexibiliteit als het gaat om je werktijden en -plek. Met de Amsterdamse Digitale Werkplek kan je inloggen waar én wanneer je wilt; 
+* een maandelijkse bijdrage in de ziektekostenverzekering; 
+
+[Kijk hier](https://www.amsterdam.nl/pga/) voor het overzicht van alle overige arbeidsvoorwaarden.
+
+**Heb je nog vragen?**
+Over de functie en sollicitatieprocedure kun je: Eline de Jong benaderen, recruiter OIS via [eline.de.jong@amsterdam.nl](eline.de.jong@amsterdam.nl). 
+</content>
+  </entry>
+  <entry>
+    <id>urn:uuid:09c70af5-9906-4ecd-ad11-a15cc492e2ed</id>
+    <published>2020-12-07T21:56:07Z</published>
+    <updated>2020-12-07T21:56:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/09c70af5-9906-4ecd-ad11-a15cc492e2ed"/>
+    <title>Full Stack Software Engineer</title>
+    <content type="html">## About us
+
+Our mission is to redefine the multi-trillion dollar logistics industry - transforming it to address the pressing needs of the 21st century. Supply chain accounts for ~10% of Global GDP and is one of the largest barriers to addressing major global challenges like sustainability, air pollution and food waste. By changing how organizations work together across the global supply chain, we will play a critical role in tackling these challenges head on and unblocking human advancement. We are a team of serial entrepreneurs with extensive backgrounds building world class product, engineering, operations, sales &amp; marketing teams. We know what it takes to go from zero-to-one AND what it takes to achieve scale and transform markets.
+
+## About the role
+
+We are looking for a product-minded software engineer who is comfortable with both front and back-end software development to join our founding engineering team. You will be responsible for development and architecture of the application while ensuring stability, security and responsiveness. You will be one of the early technical hires and will help define engineering architecture, process and culture for years to come.
+
+## Responsibilities:
+
+- Collaborate with product management, operations and sales to build a product that our customers genuinely love.
+- Communicate effectively within the organization with people sitting next to you and those multiple time zones away. We believe in breaking down silos with strong communication. 
+- Own features from start to finish: test, development, deployment, and infrastructure. 
+- Never stop learning. You’ll be responsible for mentoring and learning through code review process, tech talks, and many ad hoc technical conversations.
+- Use your judgment to decide what areas of codebase to invest in, when to incur technical debt, when to move fast, and when to slow down.
+- Wear many hats: help with scaling our engineering team, define engineering processes, understand the logistics business, and collaborate with other functions within ISO.
+
+## We get excited about candidates who have:
+- Highly experienced with back-end programming languages like Ruby, Python, Java, or JavaScript and frameworks such as Ruby on Rails, Django, or Express.js 
+- Enjoy building amazing customer experience using React, Redux or TypeScript
+- Experience using cloud infrastructure providers such as AWS, Microsoft Azure or Google Cloud
+- Real-world experience with PostgreSQL
+- Advanced knowledge of Git and Github
+- Experience working in an agile and fast-paced working environment
+
+## Nice to Have:
+- Experience in the early-mid stages of a fast-growing company
+- You are a self-starter: clubs, volunteer work, passion projects - we want to hear about them! </content>
+  </entry>
+  <entry>
+    <id>urn:uuid:ff9219e4-6cb7-4e22-9beb-d660ef2edfb5</id>
+    <published>2020-12-05T17:19:38Z</published>
+    <updated>2020-12-05T17:20:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/ff9219e4-6cb7-4e22-9beb-d660ef2edfb5"/>
+    <title>iOS Developer</title>
+    <content type="html">Our mission at eHealth Innovation is to change healthcare delivery for all by designing thoughtful digital technologies that are empathetic and ultimately empower people. We work tirelessly with whip-smart local and international minds from multidisciplinary areas like science, design, technology, and health fields to transform health systems around the globe.
+
+Embedded within Toronto General Hospital (University Health Network), we are a part of one of the largest medical research centres in North America and have unparalleled access to insights from those who use our healthcare system the most - patients and their clinicians. Due to this unique positioning and our vast skill set, our work is making an impact right now in areas the of diabetes, heart failure, asthma, chronic pain, juvenile arthritis, and prostate cancer.
+
+Being in a research environment, we are able to concentrate on this goal without being distracted by short term profit motives, or keeping investors happy. Every member of our tightly knit development team has full input in every stage of project architecture, design and implementation.
+
+We are thrilled to be working with Apple on the future of digital health and to continue to find uses for Apple Watch in the clinic and for our patients! We seek passionate software developers and engineers to help us realize this vision.
+
+We are building teams to address the full user experience and not just for Apple technology. However, for this role, knowledge of iOS and Swift development is required to drive the development of the digital therapeutics we build.
+
+**The ideal candidate would have**:
+
+- A BSc/MSc in Computer Science, Software/Computer Engineering, or equivalent
+
+- At least 3 years of work experience in iOS software programming.
+
+- Strong fundamentals in computer science and software construction.
+
+- Writing readable, idiomatic and maintainable Swift code
+
+- Deep understanding of iOS application design patterns and API design.
+
+- Experienced with a variety of iOS frameworks.
+
+- Empathy and cares about quality and knows what it means to ship high quality code.
+
+- Experience shipping iOS apps to the App Store.
+
+- Experience with build or test automation.
+
+- Deep curiosity about new technology, techniques and ideas.
+
+- Knowledge of the health system and building healthcare applications is an asset, but is not mandatory.
+
+- An interest in open source - projects contributed to or created
+
+- An interest in UI/UX design. Previous experience working directly with UI/UX design is an asset.
+
+- Experience with (or an interest in) various server stacks and languages (Rails, Spring, Django, Node, etc.)
+
+- Drive and enthusiasm to engage with peers in team discussions and decision-making processes.
+
+- Interest in collaborating with others of diverse technical ability.
+
+**Relevant links**:
+
+https://www.ehealthinnovation.org
+
+https://www.iphoneincanada.ca/news/tim-cook-apple-proud-canadian-researchers/
+
+**Job Type**: Full-time, Permanent
+
+**Salary**: $75,000.00-$90,000.00 per year
+
+**COVID-19 considerations**:
+Our software team has been working remotely since the March 2020 and will continue to do so. Laptops and other hardware will be shipped to your home before your first day of work. All onboarding and meetings are virtual.</content>
+  </entry>
+  <entry>
+    <id>urn:uuid:e89d6f0e-59b4-4cd1-9b9f-5374877f8854</id>
+    <published>2020-12-03T16:23:57Z</published>
+    <updated>2020-12-03T16:25:21Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/e89d6f0e-59b4-4cd1-9b9f-5374877f8854"/>
+    <title>Head of Engineering [m/w/d]</title>
+    <content type="html">Über Uns
+In den letzten drei Jahren hat sich StackFuel zum führenden deutschen Anbieter für berufsbegleitende Online-Trainings im Bereich Daten und KI entwickelt. Im Rahmen der digitalen Transformation unterstützen wir Konzerne, mittelständische Unternehmen und Startups dabei, ihre Mitarbeitenden mit Daten- und KI-Skills fit für den digitalen Joballtag von morgen zu machen. Unsere Lösung? Eine Plattform, unser Data Lab, in der sich unsere Trainierenden orts- und zeitunabhängig berufsgleitend mit realen Datensets und Algorith¬men in einer innovativen Programmier- und Lernumgebung weiterbilden können.
+
+Wir arbeiten mit namhaften Kunden, wie z.B. Daimler, Telefónica, Deutsche Bahn oder Axel Springer zu-sam¬men und wurden bereits mehrfach durch Industrie-Awards ausgezeichnet. Wir sind ein wachsendes Team mit über 25 Experten in Berlin-Kreuzberg und verfolgen das gleiche Ziel: Den Kulturwandel von Unternehmen beschleunigen und lebenslanges Lernen und datenbasiertes Arbeiten für alle Mitarbeitenden unserer Kunden möglich zu machen.
+
+**Aufgaben**
+
+Entwickle mit uns zusammen Europas modernste interaktive Lern- und Coding-Plattform im Bereich der Daten- und KI-Technologien. Als Head of Engineering leitest du fachlich und disziplinarisch das gesamte Entwicklungsteam von StackFuel. Du bist neben dem CTO erster Ansprechpartner für die technische Produktentwicklung unserer Lernplattform und verantwortest den Aufbau und die Weiterentwicklung der Abteilung. Du bist in der Lage in einem schnell wachsenden Unternehmensumfeld zwischen relevanten Projekten zu priorisieren und diese abteilungsübergreifend abzustimmen und zu koordinieren. Deine Stärke liegt nicht nur in dem Wissen zur Planung und Umsetzung von Front- und Backend-Systemen, sondern auch in der Führung und dem Umgang mit einem umsetzungsstarken und motivierten Entwicklerteam.
+
+*Deine Aufgaben*
+
+- Hauptverantwortung für die Planung und Entwicklung unserer Software (Plattform und Web)
+- Aufbau und Management eines agilen und prozessgetriebenen Entwicklerteams
+- Kollaborativer Austausch mit anderen Abteilungen zu Produktfeatures und Software-Projekten
+- Mentoring des Teams durch persönliche Feedback-Talks und Weiterentwicklungen
+- Kooperative Planung der Technologie Roadmap zusammen mit der Geschäftsführung
+- Eigenverantwortliches Recruiting neuer Entwickler*Innen zusammen mit unserer HR-Abteilung
+- Sicherstellung der Software-Qualität und einer effizienten Umsetzung von Software-Projekten
+
+**Qualifikation**
+
+- Du hast Erfahrung im Aufbau und Management eines Entwicklerteams (min. 3-5 Jahre)
+- Du hast starke Führungs-, Planungs- und Kommunikationsfähigkeiten
+- Du hast Hands-on Erfahrung in der Umsetzung von skalierbaren Web-Applikationen (Fullstack)
+- Du hast ein tiefes Verständnis über Systemarchitekturen und moderne Software-Technologien
+- Du kannst andere für deine Ideen und Strategien begeistern und motivieren
+- Du kannst Projektanforderungen in Abhängigkeit von strategischen Zielen planen und priorisieren
+- Du sprichst Deutsch und Englisch auf einem Business Level
+
+**Unser Technologie-Stack**
+
+- Python
+- Python Machine Learning Libs (e.g. TensorFlow, SciKit-Learn, etc.)
+- Backend: Django / REST / GraphQL
+- Frontend: TypeScript / JavaScript Frameworks (e.g. React.js, Next.js, Angular 2)
+- Jupyter Ecosystem (Notebooks, Hub, Lab)
+- Node (NPM)
+- Docker, Docker Hub
+- Jira, Bitbucket, Confluence, Slack, Trello
+
+**Unser Angebot**
+
+- Du arbeitest direkt mit unserem CTO zusammen und bist Teil des Senior Management-Teams
+- Du erhältst signifikante Firmenanteile durch unser ESOP-Programm
+- Du erhältst eine hervorragende Perspektive in einem aufstrebenden, schnell wachsenden Unternehmen in der EdTech- und Software-Branche
+- Wir bieten dir regelmäßige Schulungen und Workshops auf höchstem Niveau als festen Bestandteil deiner Weiterbildung. Auch kannst du jederzeit unsere Online-Trainings absolvieren und dich selbst zum Daten- oder KI-Experten weiterbilden
+- Du arbeitest in einem hochmotivierten und smarten Team, dass du selbst mit aufbaust
+- Bei uns erlebst du eine offene Feedbackkultur, flexible Organisationsstrukturen und Kommunikation auf Augenhöhe
+- Du genießt eine flexible Einteilung deiner Arbeitszeit inkl. mobiles Arbeiten und du arbeitest in einem komplett neuen Büro im Bergmannkiez in Berlin-Kreuzberg
+- Wir kümmern uns mit kleinen Aufmerksamkeiten wie frischem Obst, vielfältigen Teamevents und gemeinsamen Aktivitäten um jeden einzelnen unserer Kollegen
+- Unsere Mission ist es, Europas führende Institution für digitale Weiterbildungs- und Umschulungsprogramme im Bereich Data und AI zu sein.
+
+**Fühlst Du dich angesprochen? Dann sende uns deine Bewerbung und lass uns wissen, wann du starten kannst.**
+
+Wir freuen uns darauf, dich kennenzulernen.
+
+StackFuel GmbH
+Ansprechpartner: Stefan Berntheisel
+Nostitzstrasse 20
+10961 Berlin
+
+</content>
+  </entry>
+  <entry>
+    <id>urn:uuid:42318b2e-ce14-468f-a6fc-c39e0cdef359</id>
+    <published>2020-12-01T19:26:29Z</published>
+    <updated>2020-12-01T19:27:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/42318b2e-ce14-468f-a6fc-c39e0cdef359"/>
+    <title>DevOps Engineer</title>
+    <content type="html">DevOps Engineer
+(Austin, TX)
+
+About Atmosphere:
+Atmosphere is the world’s first and largest free ad-supported streaming TV service for businesses offering original, owned, and operated TV channels along with Partner Channels from prominent brands. The platform has been built from the ground up with proprietary content, technology, and data to deliver unparalleled experiences for businesses and advertisers. The platform also provides a paid upgrade to a digital signage feature for businesses to run their house promotions within the content. Atmosphere was incubated under Chive Media Group and spun out in 2019.
+
+About this role:
+Atmosphere is growing fast - which means our Engineering team has to be one step ahead when it comes to providing a stellar product and anticipating our customers' needs. As we expand our offering we need an experienced engineer with a particular focus on Python 3, Django REST Framework, and Puppet. This position reports to Atmosphere's Director of DevOps.
+ 
+You MUST reside in the Austin, TX area for consideration.
+
+SKILLS &amp; REQUIREMENTS:
+- Must have experience with automation and configuration management using Puppet, Ansible, or Chef
+- Strong grasp of modern Python development (3.6+)
+- Experience with Django and the Django REST Framework
+- Strong background in Linux/Unix Administration is a must
+- Familiarity with Continuous Integration and Continuous Delivery pipelines
+- Experience managing software releases across multiple git repositories
+- Experience with relational, non-relational, and time-series data stores (MySQL, MongoDB, Redis, Elasticsearch)
+- Knowledge of MySQL database replication methods, particularly Group Replication, preferred
+- Deep knowledge of Google Cloud Platform and AWS
+- Solid understanding of DNS, HTTP, TCP\IP, Networking and VPNs
+- GRAVY: Some Ruby/JRuby experience, CentOS/RHEL experience, and knowledge of building rpm packages
+
+COMPENSATION &amp; BENEFITS:
+- Competitive salary + commission
+- Company equity
+- Competitive insurance
+- Company 401(k)
+- Open vacation policy
+- Dog friendly
+- Lunch 3 times a week at HQ
+- Dynamic office environment
+- So much more!
+ </content>
+  </entry>
+  <entry>
+    <id>urn:uuid:d5fec958-5aca-4d12-9d56-1a61e66fba60</id>
+    <published>2020-11-25T17:32:52Z</published>
+    <updated>2020-11-25T17:37:51Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/d5fec958-5aca-4d12-9d56-1a61e66fba60"/>
+    <title>Python / Django Engineer </title>
+    <content type="html">About the role:
+
+As an Engineer, your main focus is project work, working closely with designers, coaches, product leads, and with guidance and mentoring from other members of the Engineering team. You will be assigned a representative from the Engineering team (usually a Team Engineer or Tech Community Lead) to aid your progression and help you move forward with your career at Potato.
+
+You will join one of our friendly, supportive, proactive Agile product teams, you’ll be working closely with fellow developers, designers, and other team members. Our teams are self-organising, with the freedom to define their own ways of working.
+
+Most of our products are web-based and use Python on the server, most often Django on Google App Engine (sometimes Firebase, AWS, or Azure). We use a mix of relational and non-relational databases, and other cloud services. We aim to strike a balance between leveraging our existing strengths and exploring new tech. While this listing focusses on Python, we try to avoid silos: our developers are encouraged to contribute to any part of a system they’d like to. We’re particularly interested in speaking to applicants with a background in security, or those with a good knowledge of security vulnerabilities and how to prevent them.
+
+---------
+
+About you:
+
+We expect developers at Potato to be able to find creative solutions to technical problems and user needs, whilst also finding opportunities to optimise and simplify software. For this role, we’re looking for someone capable of supporting, guiding and empowering teams to produce excellent software, striking the right balance between perfection and delivery. Experience with Google App Engine is a plus, but not mandatory.
+
+We’re looking for someone who writes great code, but also enjoys collaborating with other disciplines in the product team to devise creative solutions to the users’ needs. For this role, you should have an appreciation of the full web stack, as well as an appreciation of current trends in both backend and frontend web technologies.
+
+---------
+
+You will be accountable for:
+
+Write idiomatic, performant and maintainable code
+
+Find creative solutions to technical problems and user needs, whilst also finding opportunities to optimise and simplify software
+
+Strike the right balance between perfection and delivery
+
+Work in a friendly, self-organising, cross-functional, Agile product team
+
+Support other Engineers within the team
+
+Collaborate closely with other disciplines such as Designers and Product Leads
+
+Architecting the backend of new projects, or large additions to existing code-bases
+
+---------
+
+You must have:
+
+Experience building for the web using Python and Django
+
+Experience using modern development tools (e.g. Git, GitLab or GitHub etc.) within a development team
+
+Excellent teamwork, and written and verbal communication skills
+
+---------
+
+Ideally also:
+
+An understanding of security vulnerabilities and how to prevent them
+
+Experience with backend Python frameworks such as Flask or FastAPI
+
+Experience launching high-quality digital products
+
+Experience with Google App Engine or a similar PaaS
+
+An understanding of both relational and non-relational databases
+
+Experience creating secure and well-designed APIs
+
+Experience building for scale: high traffic, big data, large feature sets
+
+Front-end web or native app development skills
+
+Knowledge of testing, QA tools and methodologies
+
+Familiarity with Agile methodologies such as Scrum and Kanban
+
+---------
+
+Culture:
+
+Working shoulder-to-shoulder with some of the best engineers, designers and product leads in town, we’ll give you the freedom to manage your own work and trust you to get things done. Want to work from home occasionally? Go for it. Need to unwind with a game of pool or some studio dog cuddles? All good. Ultimately, we just want to make sure that you have everything you need to help us build the best products possible.
+
+You’ll have many opportunities for growth and learning: collaboration within teams, rotation to different products, experimentation on internal tools, involvement in new business and pitching, our Potato Talks events, mentorship, training courses, and conferences.
+
+---------
+
+Inclusivity:
+
+We want to make our hiring as inclusive as possible, this job description has been reviewed by a range of employees and has passed a neutral language check. We have also reviewed our hiring process to make sure it offers flexibility to candidates that need it.
+
+We're trying to do better and would love your feedback. If you think there's anything we could improve, or places you think we should advertise, then please let us know.</content>
+  </entry>
+  <entry>
+    <id>urn:uuid:1f925d62-ab2e-4700-b36b-767378fabc07</id>
+    <published>2020-11-25T16:13:02Z</published>
+    <updated>2020-11-30T12:37:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://jobs.github.com/positions/1f925d62-ab2e-4700-b36b-767378fabc07"/>
+    <title>Software Engineer, Fullstack</title>
+    <content type="html">## TL;DR
+
+- Work on a productivity tool for developers
+- Small team that is light on processes
+- Fully remote (EU-friendly timezones)
+- Backed by great investors ([Y Combinator](https://www.ycombinator.com), [Accel](https://www.accel.com/noteworthy/giving-developers-superpowers-our-investment-in-raycast), [Chapter One](https://chapterone.com) and top angels)
+- Modern perks (MacBook Pro with 5k display, co-working space, monthly health benefit, ...)
+
+## Description
+
+Raycast makes it simple, fast and delightful to control your tools. We're looking for a Software Engineer to join our small team to build, own and scale the distribution of Raycast extensions via a store that developers around the world can contribute to.
+
+Raycast is a native Mac application with a significant focus on top-notch UI and interactions. We genuinely care about user experience, performance, privacy and ease of use. We had enough of dealing with slow and clunky tools. Raycast is our attempt to let you enjoy your daily workflows without all the distractions.
+
+When Apple announced the App Store in 2008, the distribution of software changed over night. Suddenly, developers could reach millions of customers. We believe it's about time to change how developers discover and consume productivity tools. At the center of this, is a store full of Raycast extensions that people can share and manage or discover new ones from others. We need hungry engineers that architect and build this store to revolutionise how developers experience productivity tools with us.
+
+We're a fully remote company and looking for candidates in the UTC timezone (London, Lisbon, Dakar, ...) ± 3 hours. This position is for a full-time employment.
+
+## In this role you will...
+
+- **Build our extension store from scratch.** You design a stable cloud infrastructure and backend architecture that is open for extension, and an API that other developers love to use. You're implementing the frontend and work closely with design and macOS engineering where integrations are needed.
+- **Co-own the product and work self-directed.** We're a small team of individual contributors. Everybody has autonomy and responsibility. You work on features from ideation over release to maintenance and shape the roadmap of the product.
+- **Shape the experience for contributors.** The store is one piece of the puzzle. You generate ideas about how developers should add and maintain extensions. You optimise for ease-of-use for producers and consumers.
+- **Improve performance and care about quality.** You dogfood your own features with our nightly builds, respond to user feedback in our community and jump into performance profiling to make API calls fast. You automate tedious tasks. At best, directly in Raycast.
+- **Wear many hats.** In a small startup, we're all generalists. You might add a new page to our Vue.js website, set up infrastructure components, or write a blog post about a new feature.
+
+## You will be a great fit if...
+
+- **You can work across the full stack.** Ideally, you've used full stack web frameworks (e.g., Ruby on Rails, Django, Spring Boot) and you're open to use modern backend languages such as Go. You've worked with different types of data stores, and you know best practices around data modeling and access. For frontend work, you have used JavaScript and TypeScript and you are familiar with the concepts behind Vue or React. Moreover, you can reason well about the tradeoffs of different programming languages and tech stacks without being dogmatic.
+- **You're highly productive while writing quality code.** We release updates every 1-2 weeks. You can break down big projects in small deliverables. You care about the outcome and take a pragmatic approach to deliver it. You keep things simple and rather write more code than adopting a third-party dependency. You know when you want a code review or need to write tests.
+- **You're product-minded.** You have a sense for great user experience and feel when something is off. You work with continuous deployment and preview environments to get constant feedback and you have monitoring and analytics in place to quickly act when something unexpected happens. You're eager to optimize API responsiveness and dig deep when there is a need to resolve a tricky issue. You treat APIs as products and proactively iterate on them.
+- **You have a track-record of great web apps.** You've seen software projects succeed and fail and bring in proven concepts to ship software from day one.
+- **You put our users first.** Throughout Raycast you find many [little details](https://twitter.com/raycastapp/status/1322188380403281921?s=21). You pay attention to detail and provide our users a delightful experience. You can't stand bugs and don't shy away from user feedback.
+- **You're an empathetic communicator.** You treat technology as tradeoffs. You may be opinionated but you're not ideological. When disagreeing, you communicate thoughtfully your perspective and compromise when needed. You're thriving in a team environment and hold your colleagues accountable.
+
+## Our stack
+
+- **JavaScript/TypeScript for the web.** Most of our web development so far happened on our marketing website. We're **open to adopt new technologies** for the store where applicable. For now, we use Vue.js with Gridsome for our website and deploy it with Vercel. Our middleware is a simple Node.js app written with Express and hosted on Heroku.
+- **Swift for our macOS app.** Everything is written in Swift using AppKit with Swift Packages. We don't use SwiftUI because it's too premature for rapid development. We rarely adopt third party dependencies. Some are GRDB for our database, Sentry for crash reporting, Nuke for image fetching and a few C libraries to crank up performance.
+- **Modern work tools for everything.** Linear for issue tracking, GitHub as source control, Sentry for error reporting, Segment and Amplitude for analytics, Slack for internal communication, Figma for pixels, Notion as knowledge base and a few others. As a team, we enjoy using CleanShot, Bear, Things and more Mac apps.
+
+## What we offer
+
+- **We're at beginning of our next chapter.** You will join us at the [right time](blog/hello-world/) to have major impact on the future of the company. We released Raycast 1.0, established a friendly community and are jumping head first into building a platform for productivity tools.
+- **We're backed by great investors.** We're backed by [Accel](https://www.accel.com/noteworthy/giving-developers-superpowers-our-investment-in-raycast), Y Combinator, Chapter One and angels such as Charlie Cheever (Co-Founder of Expo &amp; Quora), Calvin French-Owen (Co-Founder of Segment), Zach Holman (Early GitHub engineer) and more.
+- **We're individual contributors at heart.** We value full ownership and responsibility, choose quality over quantity and put our users first. We're motivated by shipping truly great software.
+- **We'll treat you well.** Get a competitive salary, equity and health insurance. Plus, we provide a monthly health benefit for a gym, pay for your coworking space, give you a MacBook Pro with 5K display and accessories and provide 25 days of paid-time off (PTO) plus all national holidays.</content>
+  </entry>
+</feed>

@@ -16,11 +16,6 @@ class AggregateContentTest(TestCase):
     def setUpTestData(cls):
         cls.data_source = DataSourceFactory(
             plugin='aggregator.plugins.RssPlugin',
-            configuration={
-                "url": "https://hh.ru/search/vacancy/rss?text=python",
-                'keywords': ['django удаленно', 'django разыскивается', 'django специалист', 'django вакансия',
-                             'django'],
-            },
         )
 
     @mock.patch.object(DataSource, 'get_data')
@@ -31,7 +26,6 @@ class AggregateContentTest(TestCase):
                 'source_datetime': datetime.datetime(2018, 7, 13, 10, 59, 54),
                 'text': '<p>Вакансия компании: БОЛЬШАЯ ТРОЙКА</p><p>Создана: 13.07.2018</p><p>Регион: Москва</p><p>Предполагаемый уровень месячного дохода: от\xa0120\xa0000\xa0до\xa0180\xa0000\xa0руб.</p>',
                 'title': 'Backend python/Django разработчик',
-                'icon_url': None
             }
         ]
         get_data_mock.return_value = data
@@ -47,7 +41,6 @@ class AggregateContentTest(TestCase):
                 'source_datetime': datetime.datetime(2018, 7, 13, 10, 59, 54),
                 'text': '<p>Вакансия компании: БОЛЬШАЯ ТРОЙКА</p><p>Создана: 13.07.2018</p><p>Регион: Москва</p><p>Предполагаемый уровень месячного дохода: от\xa0120\xa0000\xa0до\xa0180\xa0000\xa0руб.</p>',
                 'title': 'Backend python/Django разработчик',
-                'icon_url': None
             }
         ]
         get_data_mock.return_value = data

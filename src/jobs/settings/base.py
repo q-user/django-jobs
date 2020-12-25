@@ -164,3 +164,5 @@ LOGGING = {
 }
 
 TESTING_MODE = None
+
+DEFAULT_USER_AGENT = 'django-jobs.ru aggregator'

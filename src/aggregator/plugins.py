@@ -1,24 +1,25 @@
+import re
 import time
 from datetime import timedelta, datetime
 
 import anymarkup
 import feedparser
+import markdown
 import requests
+from bs4 import BeautifulSoup
 from django.conf import settings
+from django.template.defaultfilters import linebreaks_filter
 from django.utils.datetime_safe import datetime
 from requests.exceptions import SSLError
 
-
-def words_in_string(words_list, a_string):
-    a_string = a_string.lower()
-    for word in words_list:
-        if word.lower() in a_string:
-            return True
-    return False
+USER_AGENT = settings.DEFAULT_USER_AGENT
 
 
 class PluginBase:
     subclasses = []
+
+    def __init__(self, configuration=None):
+        self.configuration = configuration
 
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)
@@ -36,23 +37,37 @@ class PluginBase:
             module_path_str = f'{subclass.__module__}.{subclass.__name__}'
             yield module_path_str
 
+    def normalize_text(self, text):
+        if self.configuration.text_format == 'MARKDOWN':
+            return markdown.markdown(text)
+
+        if re.search(r'<.*?>.*<\/.*?>|<br>|<br\/>|<br\ \/>', text, re.MULTILINE):
+            soup = BeautifulSoup(text, 'html.parser')
+            links = soup.find_all('a')
+            for link in links:
+                link['target'] = '_blank'
+                link['rel'] = 'nofollow'
+            return str(soup)
+        return linebreaks_filter(text)
+
+    @staticmethod
+    def words_in_string(words_list, a_string):
+        a_string = a_string.lower()
+        for word in words_list:
+            if word.lower() in a_string:
+                return True
+        return False
+
 
 class MoiKrugPlugin(PluginBase):
     request_headers = {
         'Accept': '*/*',
-        'User-Agent': 'django-jobs.ru rss reader'
+        'User-Agent': USER_AGENT
     }
-    configuration = {
-        'url': 'https://moikrug.ru/vacancies/rss?currency=rur&currency_cd=0&division_ids%5B%5D=2&divisions%5B%5D=backend&page=1&per_page=25&q=django&remote=1&salary_rur=0',
-        'pub_date_format': '%a, %d %b %Y %H:%M:%S %z',
-    }
-    verbose_name = 'Мой Круг'
+    url = 'https://moikrug.ru/vacancies/rss?currency=rur&currency_cd=0&division_ids%5B%5D=2&divisions%5B%5D=backend&page=1&per_page=25&q=django&remote=1&salary_rur=0'
+    time_format = '%a, %d %b %Y %H:%M:%S %z'
 
-    def __init__(self, **configuration):
-        if not configuration:
-            configuration = self.configuration
-        self.url = configuration.get('url', None)
-        self.pub_date_format = configuration.get('pub_date_format', None)
+    verbose_name = 'Мой Круг'
 
     def get_data(self, exclude_urls=()):
         response = requests.get(self.url, headers=self.request_headers)
@@ -64,7 +79,7 @@ class MoiKrugPlugin(PluginBase):
             data_list.append({
                 'url': entry['link'],
                 'source_datetime': datetime.strptime(
-                    entry['pubDate'], self.pub_date_format
+                    entry['pubDate'], self.time_format
                 ),
                 'text': entry['description'],
                 'title': entry['title'],
@@ -76,23 +91,11 @@ class MoiKrugPlugin(PluginBase):
 class RemoteJobPlugin(PluginBase):
     request_headers = {
         'Accept': '*/*',
-        'User-Agent': 'django-jobs.ru rss reader'
+        'User-Agent': USER_AGENT
     }
-    configuration = {
-        'url': 'https://remote-job.ru/feed/vacancies/jango-jobs.xml?accessKey=DMldIdJiR2TiXVsDk6fS',
-        'time_format': '%Y-%m-%d %H:%M:%S',
-        'user_agent': 'django-jobs.ru rss reader',
-        'stop_words': ['bitrix', '#pydigest'],
-        'keywords': ['django удаленно', 'django ищем', 'django специалист', 'django вакансия', 'django'],
-    }
+    url = 'https://remote-job.ru/feed/vacancies/jango-jobs.xml?accessKey=DMldIdJiR2TiXVsDk6fS'
+    time_format = '%Y-%m-%d %H:%M:%S'
     verbose_name = 'Remote Job'
-
-    def __init__(self, **configuration):
-        if not configuration:
-            configuration = self.configuration
-        self.url = configuration.get('url', None)
-        self.pub_date_format = configuration.get('time_format', None)
-        self.keywords = configuration.get('keywords', None)
 
     def get_data(self, exclude_urls=()):
         response = requests.get(self.url, headers=self.request_headers)
@@ -101,11 +104,11 @@ class RemoteJobPlugin(PluginBase):
         for entry in entries['source']['vacancies']['vacancy']:
             if entry['url'] in exclude_urls:
                 continue
-            if not words_in_string(
-                    self.keywords,
+            if not self.words_in_string(
+                    self.configuration.keywords,
                     entry['description']
-            ) and not words_in_string(
-                self.keywords,
+            ) and not self.words_in_string(
+                self.configuration.keywords,
                 entry['job-name']
             ):
                 continue
@@ -114,7 +117,7 @@ class RemoteJobPlugin(PluginBase):
                 'url': entry['url'],
                 'source_datetime': datetime.strptime(
                     entry['creation-date'][:19],
-                    self.pub_date_format
+                    self.time_format
                 ),
                 'text': entry['description'],
                 'title': entry['job-name'],
@@ -132,13 +135,6 @@ class VKPlugin(PluginBase):
     }
     verbose_name = 'Вконтакте'
 
-    def __init__(self, **configuration):
-        if not configuration:
-            configuration = self.configuration
-        self.icon_url = configuration.get('icon_url', None)
-        self.keywords = configuration.get('keywords', None)
-        self.stop_words = configuration.get('stop_words', None)
-
     def get_newsfeed(self, keyword):
         start_date = datetime.now() - timedelta(days=7)
         unix_start_date = time.mktime(start_date.timetuple())
@@ -153,7 +149,7 @@ class VKPlugin(PluginBase):
 
     def get_data(self, exclude_urls=()):
         data = []
-        for keyword in self.keywords:
+        for keyword in self.configuration.keywords:
             posts = self.get_posts_by_keyword(keyword)
             data.extend(posts)
         dict_values = dict((d['url'], d) for d in data if d['url'] not in exclude_urls).values()
@@ -167,54 +163,34 @@ class VKPlugin(PluginBase):
             url = f'https://vk.com/wall{post["from_id"]}_{post["id"]}'
             pub_date = datetime.fromtimestamp(post.get('date'))
             text = post.get('text')
-            if words_in_string(self.stop_words, text):
+            if self.words_in_string(self.configuration.stop_words, text):
                 continue
             if not text:
                 continue
             data_list.append({
                 'url': url,
                 'source_datetime': pub_date,
-                'text': text,
-                'icon_url': self.icon_url
+                'text': text
             })
         return data_list
 
 
 class RssPlugin(PluginBase):
-    configuration = {
-        'url': 'Адрес рсс канала',
-        'time_format': '',
-        'user_agent': "%s rss reader" % settings.ALLOWED_HOSTS[0],
-        'stop_words': ['bitrix', '#pydigest'],
-        'keywords': ['django удаленно', 'django разыскивается', 'django специалист', 'django вакансия', 'django'],
-        'use_feedparser': True,
-    }
     verbose_name = 'RssPlugin'
 
-    def __init__(self, **configuration):
-        self.url = configuration.get('url')
-        self.time_format = configuration.get('pub_date_format', None)
-        self.user_agent = configuration.get('user_agent', 'UA')
-        self.stop_words = configuration.get('stop_words', [])
-        self.keywords = configuration.get('keywords')
-        self.icon_url = configuration.get('icon_url', None)
-        self.use_feedparser = configuration.get('use_feedparser', None)
-
     def get_rss(self):
-        if self.use_feedparser:
-            return feedparser.parse(self.url)
         try:
             response = requests.get(
-                self.url,
+                self.configuration.url,
                 headers={
-                    'User-Agent': "%s rss reader" % settings.ALLOWED_HOSTS[0],
+                    'User-Agent': USER_AGENT,
                 }
             )
         except SSLError:
             response = requests.get(
-                self.url,
+                self.configuration.url,
                 headers={
-                    'User-Agent': "%s rss reader" % settings.ALLOWED_HOSTS[0],
+                    'User-Agent': USER_AGENT,
                 },
                 verify=False
             )
@@ -223,7 +199,6 @@ class RssPlugin(PluginBase):
     def get_data(self):
 
         rss = self.get_rss()
-
         data_list = []
 
         for entry in rss['entries']:
@@ -232,22 +207,21 @@ class RssPlugin(PluginBase):
             title = entry.get('title', '')
             pub_date = entry.get('published_parsed') or entry.get('published', None)
 
-            if words_in_string(self.stop_words, text) or \
-                    not words_in_string(self.keywords, text) and \
-                    not words_in_string(self.keywords, title):
+            if self.words_in_string(self.configuration.stop_words, text) or \
+                    not self.words_in_string(self.configuration.keywords, text) and \
+                    not self.words_in_string(self.configuration.keywords, title):
                 continue
 
             try:
                 source_datetime = datetime.fromtimestamp(time.mktime(pub_date))
             except TypeError as e:
-                source_datetime = datetime.strptime(pub_date, self.time_format).date()
+                source_datetime = datetime.strptime(pub_date, self.configuration.time_format).date()
 
             data_list.append({
                 'url': url,
                 'source_datetime': source_datetime,
-                'text': text,
-                'title': title,
-                'icon_url': self.icon_url
+                'text': self.normalize_text(text),
+                'title': title
             })
 
         return data_list

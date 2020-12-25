@@ -1,24 +1,8 @@
-import json
-
 from django.test import TestCase
 from django.urls import reverse
-from django.utils.module_loading import import_string
 
-from aggregator.plugins import PluginBase
 from aggregator.tests.factories import DataSourceFactory
 from users.tests.factories import UserFactory
-
-
-class PluginConfigurationViewTest(TestCase):
-    def test_view_returns_json_schema_for_plugin(self):
-        url = reverse("aggregator:ajax-configuration")
-        plugin = list(PluginBase.get_plugins_list())[0]
-        data = {'plugin': plugin}
-        Plugin = import_string(plugin)
-        response = self.client.post(url, data=data, HTTP_X_REQUESTED_WITH='XMLHttpRequest')
-        plugin_settings = json.loads(response.content.decode())
-        for key in Plugin.configuration.keys():
-            self.assertIn(key, plugin_settings)
 
 
 class DataSourceChangeViewTest(TestCase):
