@@ -1,9 +1,10 @@
 import json
 import os
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlparse
 from urllib.request import urlretrieve
 
 from django.conf import settings
+from django.contrib.postgres.fields import ArrayField
 from django.core.validators import validate_image_file_extension
 from django.db import models
 from django.db.models import JSONField
@@ -13,6 +14,40 @@ from django.utils.module_loading import import_string
 from django_celery_beat.models import PeriodicTask, IntervalSchedule
 
 from aggregator.plugins import PluginBase
+
+
+class SourceConfiguration(models.Model):
+    class TextFormat(models.TextChoices):
+        MARKDOWN = 'MARKDOWN', 'Markdown'
+        HTML = 'HTML', 'HTML'
+        PLAIN = 'PLAIN', 'Plain'
+
+    url = models.URLField()
+    keywords = ArrayField(
+        models.CharField(max_length=50),
+        blank=True,
+        default=list
+    )
+    stop_words = ArrayField(
+        models.CharField(max_length=50),
+        blank=True,
+        default=list
+    )
+    time_format = models.CharField(max_length=48, null=False, blank=True, default='')
+    text_format = models.CharField(
+        max_length=10,
+        choices=TextFormat.choices,
+        default=TextFormat.PLAIN
+    )
+
+    class Meta:
+        verbose_name = 'Запись конфигурации'
+        verbose_name_plural = 'Записи конфигураций'
+
+    def __str__(self):
+        if hasattr(self, 'datasource'):
+            return str(self.datasource)
+        return urlparse(self.url).netloc
 
 
 class DataSource(models.Model):
@@ -25,7 +60,12 @@ class DataSource(models.Model):
     )
     icon_url = models.URLField(verbose_name='Иконка из интернета', null=True, blank=True)
     plugin = models.CharField(max_length=250, choices=PluginBase.get_plugins_choices())
-    configuration = JSONField()
+
+    configuration = models.OneToOneField(
+        SourceConfiguration,
+        on_delete=models.CASCADE,
+        null=True
+    )
     last_use_time = models.DateTimeField(auto_now=True)
     task = models.ForeignKey(PeriodicTask, on_delete=models.CASCADE, null=True, blank=True)
 
@@ -39,7 +79,7 @@ class DataSource(models.Model):
 
     def get_data(self):
         Plugin = import_string(self.plugin)
-        data = Plugin(**self.configuration).get_data()
+        data = Plugin(self.configuration).get_data()
         return data
 
     def save(self, force_insert=False, force_update=False, using=None,

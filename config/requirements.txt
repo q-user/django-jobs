@@ -32,6 +32,7 @@ jdcal==1.4.1
 json5==0.9.5
 kombu==5.0.2
 langdetect==1.0.8
+Markdown==3.3.3
 MarkupPy==1.14
 odfpy==1.4.1
 openpyxl==3.0.5

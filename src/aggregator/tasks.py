@@ -28,9 +28,11 @@ def aggregate_content(datasource_id=None):
         return
 
     for d in data:
+        icon_url = d.pop('icon_url', datasource.icon.url)
         Article.objects.clean_create(
             source=datasource,
             active=True,
+            icon_url=icon_url,
             **d
         )
 
