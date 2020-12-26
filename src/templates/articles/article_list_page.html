@@ -26,7 +26,7 @@
       <h1 class="article-header">
         <a target="_blank" href="{{ object.url }}">{{ object.title }}</a>
       </h1>
-      <div class="article-text">{{ object.formated_article|safe }}</div>
+      <div class="article-text">{{ object.text|safe }}</div>
     </div>
     <div class="col-md-10 py-4">
       <hr class="{{ css_hr_class }}">

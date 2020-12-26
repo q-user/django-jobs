@@ -1,10 +1,8 @@
 import hashlib
 import logging
-import re
 
 from bs4 import BeautifulSoup
 from django.db import models
-from django.template.defaultfilters import linebreaks_filter
 from django.utils.text import Truncator
 from langdetect import detect
 from langdetect.lang_detect_exception import LangDetectException
@@ -23,7 +21,7 @@ class Article(models.Model):
     source_datetime = models.DateTimeField(auto_now_add=False, auto_now=False, null=True)
     active = models.BooleanField(default=True)
     language = models.CharField(max_length=15, null=True, blank=True)
-    icon_url = models.URLField(null=True, blank=True)
+    icon_url = models.CharField(max_length=200, null=True, blank=True)
     hash = models.CharField(
         max_length=40,
         null=False,
@@ -68,13 +66,3 @@ class Article(models.Model):
                 self.language = lang
             except LangDetectException as e:
                 logger.info(e, exc_info=True)
-
-    def formated_article(self):
-        if re.search(r'<.*?>.*<\/.*?>|<br>|<br/>', self.text, re.MULTILINE):
-            soup = BeautifulSoup(self.text, 'html.parser')
-            links = soup.find_all('a')
-            for link in links:
-                link['target'] = '_blank'
-                link['rel'] = 'nofollow'
-            return str(soup)
-        return linebreaks_filter(self.text)
