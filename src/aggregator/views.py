@@ -4,7 +4,9 @@ from django.core.exceptions import PermissionDenied
 from django.db.models import Count, Q, OuterRef, Subquery
 from django.db.models.functions import Coalesce
 from django.http import JsonResponse
+from django.utils.decorators import method_decorator
 from django.utils.module_loading import import_string
+from django.views.decorators.cache import cache_page
 from django.views.generic import TemplateView
 
 from aggregator.models import DataSource
@@ -21,11 +23,13 @@ def ajax_plugin_configuration(request):
     return JsonResponse(Plugin.configuration)
 
 
+@method_decorator(cache_page(60 * 10, key_prefix='stats_view'), name='dispatch')
 class StatsView(TemplateView):
     template_name = "aggregator/stats.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
         week_delta = date.today() - timedelta(days=7)
         newest = Article.objects.filter(source=OuterRef('pk')).order_by('-timestamp')
         sources = DataSource.objects.annotate(
@@ -33,6 +37,7 @@ class StatsView(TemplateView):
             total_count=Count('articles'),
             newest_article_time=Coalesce(Subquery(newest.values('timestamp')[:1]), date(1, 1, 1))
         ).order_by('-newest_article_time')
+
         context.update({
             "data_sources": sources
         })

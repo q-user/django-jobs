@@ -9,12 +9,12 @@ from import_export.admin import ImportExportMixin
 
 from aggregator.models import DataSource, SourceConfiguration
 from aggregator.resources import DataSourceResource
-from aggregator.tasks import aggregate_content
+from aggregator.tasks import AggregateContent
 
 
 def run_now(modeladmin, request, queryset):
     for datasource in queryset.iterator():
-        aggregate_content(datasource.id)
+        AggregateContent().run(datasource_id=datasource.id)
 
 
 run_now.short_description = 'Запустить сейчас'
