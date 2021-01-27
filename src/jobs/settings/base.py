@@ -123,6 +123,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 THUMBNAIL_PRESERVE_FORMAT = True
 THUMBNAIL_COLORSPACE = None
 THUMBNAIL_CACHE_TIMEOUT = '3600 * 24'
+THUMBNAIL_KVSTORE = 'sorl.thumbnail.kvstores.redis_kvstore.KVStore'
 
 CACHES = {
     'default': {
