@@ -8,6 +8,8 @@ from jobs.celery import app
 
 
 class AggregateContent(app.Task):
+    name = 'aggregator.aggregate_content'
+
     @staticmethod
     def get_data(datasource):
         data = []
@@ -52,3 +54,6 @@ class AggregateContent(app.Task):
             cache.delete('stats_view')
 
         datasource.save()
+
+
+app.tasks.register(AggregateContent())

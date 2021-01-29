@@ -4,7 +4,7 @@ from unittest import mock
 from django.test import TestCase, tag
 
 from aggregator.models import DataSource
-from aggregator.tasks import aggregate_content
+from aggregator.tasks import AggregateContent
 from aggregator.tests.factories import DataSourceFactory
 from articles.models import Article
 from articles.tests.factories import ArticleFactory
@@ -29,7 +29,7 @@ class AggregateContentTest(TestCase):
             }
         ]
         get_data_mock.return_value = data
-        aggregate_content()
+        AggregateContent().run()
         self.assertQuerysetEqual(Article.objects.all(), ['<Article: Backend python/Django разработчик>'])
 
     @mock.patch.object(DataSource, 'get_data')
@@ -44,4 +44,4 @@ class AggregateContentTest(TestCase):
             }
         ]
         get_data_mock.return_value = data
-        aggregate_content()
+        AggregateContent().run()

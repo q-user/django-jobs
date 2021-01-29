@@ -1,9 +1,11 @@
-from datetime import timedelta
+from datetime import date, timedelta
 
 from django.db.models import Q
 from django.shortcuts import render
 from django.utils import timezone
 from django.utils.datetime_safe import date
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 from el_pagination.views import AjaxListView
 
 from articles.models import Article
@@ -13,6 +15,7 @@ def login_vk_view(request):
     return render(request, 'registration/login.html', {})
 
 
+@method_decorator(cache_page(60 * 10, key_prefix='view'), name='dispatch')
 class HomeView(AjaxListView):
     model = Article
     template_name = "articles/article_list.html"
@@ -36,7 +39,7 @@ class HomeView(AjaxListView):
     def get_queryset(self):
         qs = super(HomeView, self).get_queryset()
 
-        qs = qs.filter(timestamp__gte=timezone.now()-timedelta(days=7))
+        qs = qs.filter(timestamp__gte=timezone.now() - timedelta(days=7))
 
         qs = qs.exclude(
             Q(text=None) | Q(active=False)

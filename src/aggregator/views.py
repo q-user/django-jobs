@@ -23,7 +23,7 @@ def ajax_plugin_configuration(request):
     return JsonResponse(Plugin.configuration)
 
 
-@method_decorator(cache_page(60 * 10, key_prefix='stats_view'), name='dispatch')
+@method_decorator(cache_page(60 * 10, key_prefix='view'), name='dispatch')
 class StatsView(TemplateView):
     template_name = "aggregator/stats.html"
 
