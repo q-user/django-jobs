@@ -1,6 +1,6 @@
 FROM python:3.8-alpine
 ENV PYTHONUNBUFFERED 1
-ADD config/requirements.txt /app/requirements.txt
+COPY config/requirements.txt /app/requirements.txt
 WORKDIR /app/
 USER root
 RUN \
