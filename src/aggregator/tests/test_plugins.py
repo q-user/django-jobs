@@ -1,4 +1,3 @@
-import os
 from unittest.mock import patch, Mock
 
 from django.test import TestCase
@@ -6,6 +5,7 @@ from django.test import TestCase
 from aggregator.models import SourceConfiguration
 from aggregator.plugins import RemoteJobPlugin, MoiKrugPlugin, RssPlugin
 from aggregator.tests.factories import SourceConfigurationFactory
+from aggregator.tests.mock_data.data import common_rss, github, remotejob
 
 
 class RemoteJobPluginTest(TestCase):
@@ -17,9 +17,7 @@ class RemoteJobPluginTest(TestCase):
 
     @patch('requests.get')
     def test_plugin_returns_posts_data(self, mock_requests_get):
-        rss_mock_path = os.path.join(os.path.dirname(__file__), 'mock_data', 'remote-job.xml')
-        with open(rss_mock_path, 'r') as xml_file:
-            xml = xml_file.read().replace('\n', '')
+        xml = remotejob()
         mock_requests_get.return_value = Mock(text=xml)
 
         data = self.plugin.get_data()
@@ -37,9 +35,7 @@ class MoiKrugPluginTest(TestCase):
 
     @patch('requests.get')
     def test_plugin_return_posts_data(self, mock_requests_get):
-        rss_mock_path = os.path.join(os.path.dirname(__file__), 'mock_data', 'moi_krug_rss.xml')
-        with open(rss_mock_path, 'r') as xml_file:
-            xml = xml_file.read().replace('\n', '')
+        xml = common_rss()
         mock_requests_get.return_value = Mock(text=xml)
 
         data = self.plugin.get_data()
@@ -54,9 +50,7 @@ class MoiKrugPluginTest(TestCase):
 class RssPluginTest(TestCase):
     @patch('requests.get')
     def test_plugin_returns_posts_data(self, mock_requests_get):
-        rss_mock_path = os.path.join(os.path.dirname(__file__), 'mock_data', 'common_rss.xml')
-        with open(rss_mock_path, 'r') as xml_file:
-            xml = xml_file.read().replace('\n', '')
+        xml = common_rss()
         mock_requests_get.return_value = Mock(text=xml)
         plugin = RssPlugin(SourceConfigurationFactory())
         data = plugin.get_data()
@@ -68,9 +62,7 @@ class RssPluginTest(TestCase):
 
     @patch('requests.get')
     def test_markdown_is_handled_correctly(self, mock_requests_get):
-        rss_mock_path = os.path.join(os.path.dirname(__file__), 'mock_data', 'github.xml')
-        with open(rss_mock_path, 'r') as xml_file:
-            xml = xml_file.read().replace('\n', '')
+        xml = github()
         mock_requests_get.return_value = Mock(text=xml)
         configuration = SourceConfigurationFactory(
             text_format=SourceConfiguration.TextFormat.MARKDOWN
@@ -78,4 +70,3 @@ class RssPluginTest(TestCase):
         plugin = RssPlugin(configuration)
         data = plugin.get_data()
         self.assertIn('<p>', data[0]['text'])
-
