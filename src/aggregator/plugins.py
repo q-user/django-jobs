@@ -214,7 +214,7 @@ class RssPlugin(PluginBase):
 
             try:
                 source_datetime = datetime.fromtimestamp(time.mktime(pub_date))
-            except TypeError as e:
+            except TypeError:
                 source_datetime = datetime.strptime(pub_date, self.configuration.time_format).date()
 
             data_list.append({

@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from aggregator.views import ajax_plugin_configuration, StatsView
+from aggregator.views import StatsView
 
 app_name = "aggregator"
 

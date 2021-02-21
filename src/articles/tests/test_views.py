@@ -2,7 +2,6 @@ from django.test import TestCase
 from django.urls import reverse
 
 from aggregator.tests.factories import DataSourceFactory
-from articles.models import Article
 from articles.tests.factories import ArticleFactory
 
 
