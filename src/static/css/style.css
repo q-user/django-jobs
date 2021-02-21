@@ -27,25 +27,19 @@
   margin-top: -5px;
 }
 
-h1,
-h2,
-h1.article-header a {
+h1, h2, h1.article-header a {
   color: #4A80B1
 }
 
-h1,
-h2,
-h1.article-header a:hover {
+h1, h2, h1.article-header a:hover {
   color: #2F689C
 }
 
-a,
-.source-link {
+a, .source-link {
   color: #44B78C;
 }
 
-a,
-.source-link:hover {
+a, .source-link:hover {
   color: #29A375;
 }
 
