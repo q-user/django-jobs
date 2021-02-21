@@ -4,9 +4,7 @@ from django.core.exceptions import PermissionDenied
 from django.db.models import Count, Q, OuterRef, Subquery
 from django.db.models.functions import Coalesce
 from django.http import JsonResponse
-from django.utils.decorators import method_decorator
 from django.utils.module_loading import import_string
-from django.views.decorators.cache import cache_page
 from django.views.generic import TemplateView
 
 from aggregator.models import DataSource
@@ -23,7 +21,6 @@ def ajax_plugin_configuration(request):
     return JsonResponse(Plugin.configuration)
 
 
-@method_decorator(cache_page(60 * 10, key_prefix='view'), name='dispatch')
 class StatsView(TemplateView):
     template_name = "aggregator/stats.html"
 
