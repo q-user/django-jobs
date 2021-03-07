@@ -25,7 +25,6 @@ class Article(models.Model):
     hash = models.CharField(
         max_length=40,
         null=False,
-        db_index=True,
         editable=False,
         unique=True
     )

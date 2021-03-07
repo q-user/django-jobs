@@ -1,7 +1,7 @@
 from datetime import date, timedelta
 
 from django.core.exceptions import PermissionDenied
-from django.db.models import Count, Q, OuterRef, Subquery
+from django.db.models import Count, Q, OuterRef, Subquery, Max
 from django.db.models.functions import Coalesce
 from django.http import JsonResponse
 from django.utils.module_loading import import_string
@@ -28,11 +28,10 @@ class StatsView(TemplateView):
         context = super().get_context_data(**kwargs)
 
         week_delta = date.today() - timedelta(days=7)
-        newest = Article.objects.filter(source=OuterRef('pk')).order_by('-timestamp')
         sources = DataSource.objects.annotate(
             week_count=Count('articles', filter=Q(articles__timestamp__gte=week_delta)),
             total_count=Count('articles'),
-            newest_article_time=Coalesce(Subquery(newest.values('timestamp')[:1]), date(1, 1, 1))
+            newest_article_time=Coalesce(Max('articles__timestamp'), date(1, 1, 1))
         ).order_by('-newest_article_time')
 
         context.update({

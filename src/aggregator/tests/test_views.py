@@ -2,6 +2,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from aggregator.tests.factories import DataSourceFactory
+from articles.tests.factories import ArticleFactory
 from users.tests.factories import UserFactory
 
 
@@ -19,6 +20,12 @@ class DataSourceChangeViewTest(TestCase):
 
 
 class StatsViewTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        ArticleFactory.create_batch(5, source=DataSourceFactory())
+        ArticleFactory.create_batch(5, source=DataSourceFactory())
+        ArticleFactory.create_batch(5, source=DataSourceFactory())
+
     def test_page_can_be_accessed(self):
         response = self.client.get(reverse('aggregator:stats'))
         self.assertEqual(response.status_code, 200)
