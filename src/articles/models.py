@@ -43,6 +43,7 @@ class Article(models.Model):
         ordering = ['-timestamp']
         verbose_name = 'Вакансия'
         verbose_name_plural = 'Вакансии'
+        indexes = [models.Index(fields=['id'])]
 
     def __str__(self):
         return f'{self.title}'
