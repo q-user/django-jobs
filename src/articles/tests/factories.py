@@ -2,7 +2,15 @@ import factory
 from django.utils import timezone
 from factory.django import DjangoModelFactory
 
-from articles.models import Article
+from articles.models import Article, Picture
+
+
+class PictureFactory(DjangoModelFactory):
+    image = factory.django.ImageField()
+    url = factory.Faker('image_url')
+
+    class Meta:
+        model = Picture
 
 
 class ArticleFactory(DjangoModelFactory):
@@ -15,8 +23,7 @@ class ArticleFactory(DjangoModelFactory):
     )
     active = factory.Faker('pybool')
 
-    # Disabled due to sorl-thumbnail download errors
-    # icon_url = factory.Faker('image_url')
+    picture = factory.SubFactory(PictureFactory)
 
     hash = factory.Faker('sha1')
 

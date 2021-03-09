@@ -3,8 +3,9 @@ from django_celery_beat.models import IntervalSchedule, PeriodicTask
 from sentry_sdk import capture_message
 
 from aggregator.models import DataSource
-from articles.models import Article
+from articles.models import Article, Picture
 from jobs.celery import app
+from jobs.utils import download_image
 
 
 class AggregateContent(app.Task):
@@ -33,10 +34,20 @@ class AggregateContent(app.Task):
         counter = 0
         for d in data:
             icon_url = d.pop('icon_url', datasource.icon.url)
+            picture = None
+            if Picture.objects.filter(url=icon_url).exists():
+                picture = Picture.objects.get(url=icon_url)
+            elif icon_url.startswith('http'):
+                path = download_image(icon_url, Picture.image.field.upload_to)
+                picture = Picture.objects.create(
+                    image=path,
+                    url=icon_url
+                )
+
             Article.objects.clean_create(
                 source=datasource,
                 active=True,
-                icon_url=icon_url,
+                picture=picture,
                 **d
             )
             counter += 1

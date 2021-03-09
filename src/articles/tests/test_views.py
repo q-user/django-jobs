@@ -6,7 +6,9 @@ from articles.tests.factories import ArticleFactory
 
 
 class HomeViewTest(TestCase):
+
     def test_view_response_200(self):
+        articles = ArticleFactory.create_batch(5)
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
 

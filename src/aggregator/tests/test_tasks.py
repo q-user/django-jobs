@@ -1,7 +1,7 @@
 import datetime
 from unittest import mock
 
-from django.test import TestCase, tag
+from django.test import tag, TestCase
 
 from aggregator.models import DataSource
 from aggregator.tasks import AggregateContent

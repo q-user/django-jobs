@@ -19,6 +19,7 @@ class SourceConfigurationFactory(DjangoModelFactory):
 class DataSourceFactory(DjangoModelFactory):
     title = factory.Faker('sentence', nb_words=10)
     configuration = factory.SubFactory(SourceConfigurationFactory)
+    icon = factory.django.ImageField()
 
     class Meta:
         model = DataSource

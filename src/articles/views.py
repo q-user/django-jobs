@@ -40,7 +40,7 @@ class HomeView(AjaxListView):
 
         qs = qs.exclude(
             Q(text=None) | Q(active=False)
-        ).select_related('source').order_by('-source_datetime')
+        ).select_related('source', 'picture').order_by('-source_datetime')
 
         # Filters section
         language = self.request.GET.get('language', None)

@@ -1,3 +1,6 @@
+import shutil
+import tempfile
+
 from .base import *
 
 TESTING_MODE = True
@@ -26,3 +29,11 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
     }
 }
+
+tempdir = os.path.join(tempfile.gettempdir(), 'datasource')
+try:
+    shutil.rmtree(tempdir)
+except OSError as e:
+    print("Error: %s : %s" % (tempdir, e.strerror))
+shutil.copytree(MEDIA_ROOT, tempdir)
+MEDIA_ROOT = tempdir

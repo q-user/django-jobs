@@ -9,18 +9,13 @@
       <div class="mb-4">
         <small class="article-date">{{ object.source_datetime|date:"d E" }}</small>
       </div>
-      {% if object.icon_url %}
-        {% thumbnail object.icon_url "100" as im %}
+      {#{% if object.picture %}#}
+        {% thumbnail object.picture.image "100" as im %}
           <a href="{% add_query_params request source=object.source.id %}">
             <img class="img-fluid" src="{{ im.url }}">
           </a>
         {% endthumbnail %}
-      {% elif object.source.icon %}
-        {% thumbnail object.source.icon "100" as im %}
-           <a href="{% add_query_params request source=object.source.id %}">
-             <img class="img-fluid" src="{{ im.url }}"></a>
-        {% endthumbnail %}
-      {% endif %}
+      {#{% endif %}#}
     </div>
     <div class="col-md-8 mr-auto py-3">
       <h1 class="article-header">

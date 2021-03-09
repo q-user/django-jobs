@@ -13,6 +13,15 @@ from articles.managers import ArticleManager
 logger = logging.getLogger(__name__)
 
 
+class Picture(models.Model):
+    image = models.ImageField(upload_to='article_icons/')
+    url = models.URLField(verbose_name='Адрес в интернете')
+
+    class Meta:
+        verbose_name = 'Иконка'
+        verbose_name_plural = 'Иконки'
+
+
 class Article(models.Model):
     url = models.URLField()
     text = models.TextField()
@@ -21,6 +30,12 @@ class Article(models.Model):
     source_datetime = models.DateTimeField(auto_now_add=False, auto_now=False, null=True)
     active = models.BooleanField(default=True)
     language = models.CharField(max_length=15, null=True, blank=True)
+    picture = models.ForeignKey(
+        'articles.Picture',
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True
+    )
     icon_url = models.CharField(max_length=200, null=True, blank=True)
     hash = models.CharField(
         max_length=40,

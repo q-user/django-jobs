@@ -1,15 +1,17 @@
-from django.test import TestCase, tag
+from django.test import tag, TestCase
 
 from aggregator.tests.factories import DataSourceFactory
-from articles.tests.factories import ArticleFactory
+from articles.tests.factories import ArticleFactory, PictureFactory
 
 
 @tag('model')
 class ArticleModelTest(TestCase):
     def test_title_generated_upon_clean(self):
+        picture = PictureFactory()
         article = ArticleFactory.build(
             title=None,
-            source=DataSourceFactory()
+            source=DataSourceFactory(),
+            picture=picture
         )
         article.full_clean()
         article.save()

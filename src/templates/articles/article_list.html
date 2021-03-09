@@ -38,18 +38,13 @@
           </div>
 
           <div class="col-sm-2">
-            {% if object.icon_url %}
-              {% thumbnail object.icon_url "100" as im %}
+            {#{% if object.picture %}#}
+              {% thumbnail object.picture.image "100" as im %}
                 <a href="{% add_query_params request source=object.source.id %}">
                   <img class="img-fluid" src="{{ im.url }}">
                 </a>
               {% endthumbnail %}
-            {% elif object.source.icon %}
-              {% thumbnail object.source.icon "100" as im %}
-                <a href="{% add_query_params request source=object.source.id %}">
-                  <img class="img-fluid" src="{{ im.url }}"></a>
-              {% endthumbnail %}
-            {% endif %}
+            {#{% endif %}#}
           </div>
         </div>
         <div class="col-md-9 mr-auto py-3">
