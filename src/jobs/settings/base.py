@@ -125,6 +125,8 @@ THUMBNAIL_PRESERVE_FORMAT = True
 THUMBNAIL_COLORSPACE = None
 THUMBNAIL_CACHE_TIMEOUT = '3600 * 24'
 THUMBNAIL_KVSTORE = 'sorl.thumbnail.kvstores.redis_kvstore.KVStore'
+THUMBNAIL_REDIS_HOST=os.environ.get('THUMBNAIL_REDIS_HOST', 'localhost')
+THUMBNAIL_REDIS_DB=2
 
 CACHES = {
     'default': {
