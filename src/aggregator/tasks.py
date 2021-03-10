@@ -33,10 +33,12 @@ class AggregateContent(app.Task):
     def save_data(data, datasource):
         counter = 0
         for d in data:
-            icon_url = d.pop('icon_url', datasource.icon.url)
+            icon_url = d.pop('icon_url', str(datasource.icon))
             picture = None
             if Picture.objects.filter(url=icon_url).exists():
                 picture = Picture.objects.get(url=icon_url)
+            elif not Picture.objects.filter(url=icon_url).exists():
+                picture = Picture.objects.create(image=datasource.icon, url=icon_url)
             elif icon_url.startswith('http'):
                 path = download_image(icon_url, Picture.image.field.upload_to)
                 picture = Picture.objects.create(

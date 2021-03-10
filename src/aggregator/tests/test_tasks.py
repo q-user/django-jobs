@@ -32,6 +32,10 @@ class AggregateContentTest(TestCase):
         AggregateContent().run()
         self.assertQuerysetEqual(Article.objects.all(), ['<Article: Backend python/Django разработчик>'])
 
+        a = Article.objects.latest('id')
+        self.assertIsNotNone(a.picture)
+
+
     @mock.patch.object(DataSource, 'get_data')
     def test_task_handles_duplicated_url(self, get_data_mock):
         ArticleFactory(url='https://hh.ru/vacancy/26546774')
