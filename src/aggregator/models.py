@@ -108,7 +108,7 @@ def create_periodic_task(sender, instance, created, **kwargs):
         instance.task = PeriodicTask.objects.create(
             interval=schedule,
             name=instance.title,
-            task='aggregator.task.aggregate_content',
+            task='aggregator.aggregate_content',
             kwargs=json.dumps({
                 'datasource_id': instance.id
             })
