@@ -29,7 +29,7 @@ def forwards_func(apps, schema_editor):
             ds.task = PeriodicTask.objects.create(
                 interval=schedule,
                 name=ds.title,
-                task='aggregator.tasks.aggregate_content',
+                task='aggregator.aggregate_content',
                 kwargs=json.dumps({
                     'datasource_id': ds.id
                 })
