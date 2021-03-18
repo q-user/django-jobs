@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'import_export',
     'django_json_widget',
     'el_pagination',
-    'cachalot',
+    # 'cachalot',
 
     # Local apps
     'users.apps.UsersConfig',
