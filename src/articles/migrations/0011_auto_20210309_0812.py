@@ -4,8 +4,8 @@ import os
 import shutil
 import urllib
 from urllib.parse import urlsplit
-from urllib.request import urlretrieve
 
+import requests
 from django.conf import settings
 from django.db import migrations
 
@@ -16,24 +16,26 @@ def download_image(url, upload_to):
     if not os.path.exists(path):
         os.makedirs(path)
     absolute_path = os.path.join(path, filename)
-    r, h = urlretrieve(
-        url,
-        absolute_path
-    )
+
+    r = requests.get(url)
+    with open(str(absolute_path), 'wb') as f:
+        f.write(r.content)
+
     return os.path.join(upload_to, filename)
 
 
 def move_pictures(apps, schema_editor):
     Article = apps.get_model('articles', 'Article')
     Picture = apps.get_model('articles', 'Picture')
-    upload_to = [f.upload_to for f in Picture._meta.fields if f.name == 'image'][0]
+    upload_to = \
+    [f.upload_to for f in Picture._meta.fields if f.name == 'image'][0]
     picture_map = {}
     for a in Article.objects.all().iterator():
         # Обработка изображений из интернета
         picture = None
         if a.icon_url and a.icon_url.startswith('http'):
-            id = picture_map.get(a.icon_url, None)
-            if id is None:
+            picture_id = picture_map.get(a.icon_url, None)
+            if picture_id is None:
                 try:
                     image = download_image(a.icon_url, upload_to)
                     picture = Picture.objects.create(
@@ -46,13 +48,13 @@ def move_pictures(apps, schema_editor):
                     a.save()
                     continue
             else:
-                picture = Picture.objects.get(id=id)
+                picture = Picture.objects.get(id=picture_id)
 
         # Обработка локальных изображений
         else:
             url = str(a.source.icon)
-            id = picture_map.get(url, None)
-            if id is None:
+            picture_id = picture_map.get(url, None)
+            if picture_id is None:
                 # Если файла нет, нужно его переместить и создать
                 # новый инстанс Picture
 
@@ -70,7 +72,7 @@ def move_pictures(apps, schema_editor):
                     url: picture.id
                 })
             else:
-                picture = Picture.objects.get(id=id)
+                picture = Picture.objects.get(id=picture_id)
 
         a.picture = picture
         a.save()

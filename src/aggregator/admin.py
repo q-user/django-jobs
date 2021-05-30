@@ -34,6 +34,7 @@ class DataSourceAdmin(ImportExportMixin, admin.ModelAdmin):
         JSONField: {'widget': JSONEditorWidget}
     }
 
+    # pylint: disable=no-self-use
     def picture(self, obj):
         return format_html(f'<img width="20" src="{settings.MEDIA_URL}{obj.icon}">')
 

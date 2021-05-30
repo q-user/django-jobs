@@ -68,7 +68,7 @@ class Article(models.Model):
             self.title = Truncator(self.title).words(15, html=True)
 
         if not self.hash:
-            self.hash = hashlib.sha1(self.text.encode('utf-8')).hexdigest()
+            self.hash = hashlib.sha1(self.text.encode('utf-8')).hexdigest()  # nosec
 
         super().full_clean(exclude, validate_unique)
 

@@ -24,11 +24,11 @@ class ArticleManager(models.Manager):
         obj.save()
         return obj
 
-    def get_similar_to(self, id, exclude_base=True):
-        base_article = self.get_queryset().get(id=id)
+    def get_similar_to(self, pk, exclude_base=True):
+        base_article = self.get_queryset().get(pk=pk)
         qs = self.get_queryset().annotate(
             similarity=TrigramSimilarity('article', base_article.article)
         )
         if exclude_base:
-            qs = qs.exclude(id=id)
+            qs = qs.exclude(pk=pk)
         return qs.filter(similarity__gt=0.80)

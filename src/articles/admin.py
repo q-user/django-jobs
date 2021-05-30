@@ -16,6 +16,7 @@ class ArticleAdmin(ImportExportMixin, ModelAdmin):
     ordering = ['-source_datetime']
     resource_class = ArticleResource
 
+    # pylint: disable=no-self-use
     def article_url(self, obj):
         return format_html('<a href="%s" target="_blank">%s</a>' % (obj.url, obj.url))
 

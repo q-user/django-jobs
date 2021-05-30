@@ -30,12 +30,13 @@ class AggregateContentTest(TestCase):
         ]
         get_data_mock.return_value = data
         AggregateContent().run()
-        self.assertQuerysetEqual(Article.objects.all(), ['<Article: Backend python/Django разработчик>'])
+        self.assertQuerysetEqual(Article.objects.all(), [
+            '<Article: Backend python/Django разработчик>'])
 
         a = Article.objects.latest('id')
         self.assertIsNotNone(a.picture)
 
-
+    # pylint: disable=no-self-use
     @mock.patch.object(DataSource, 'get_data')
     def test_task_handles_duplicated_url(self, get_data_mock):
         ArticleFactory(url='https://hh.ru/vacancy/26546774')
@@ -49,3 +50,19 @@ class AggregateContentTest(TestCase):
         ]
         get_data_mock.return_value = data
         AggregateContent().run()
+
+    # pylint: disable=no-self-use
+    def test_task_handles_empty_url(self):
+        data = [{
+            'source_datetime': datetime.datetime(2021, 4, 12, 11, 19, 17,
+                                                 tzinfo=datetime.timezone(
+                                                     datetime.timedelta(
+                                                         seconds=10800))),
+            'text': 'Компания «BOW GROUP» ищет хорошего специалиста на вакансию «Python developer / Python разработчик». От 80 000 ₽ до 120 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #backend, #middle, #Python, #ООП, #Git, #SQL, #PostgreSQL, #Restfulapi, #Django, #Websockets.',
+            'title': 'Требуется «Python developer / Python разработчик» (от 80 000 до 120 000 ₽)',
+            'url': ''
+        }]
+        AggregateContent.save_data(
+            data,
+            DataSource.objects.first()
+        )

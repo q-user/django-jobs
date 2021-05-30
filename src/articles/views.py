@@ -51,4 +51,4 @@ class HomeView(AjaxListView):
         if source is not None and source.isnumeric():
             qs = qs.filter(source__id=int(source))
 
-        return qs
+        return qs[:50]

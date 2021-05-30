@@ -1,8 +1,7 @@
 import os
-import urllib
 from urllib.parse import urlsplit
-from urllib.request import urlretrieve
 
+import requests
 from django.conf import settings
 
 
@@ -11,12 +10,9 @@ def download_image(url, media_path):
     path = os.path.join(settings.MEDIA_ROOT, media_path)
     if not os.path.exists(path):
         os.makedirs(path)
-    try:
-        r, h = urlretrieve(
-            url,
-            os.path.join(path, filename)
-        )
-    except urllib.error.HTTPError:
-        return ''
+
+    r = requests.get(url)
+    with open(str(os.path.join(path, filename)), 'wb') as f:
+        f.write(r.content)
 
     return os.path.join(media_path, filename)

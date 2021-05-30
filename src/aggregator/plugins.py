@@ -1,6 +1,6 @@
 import re
 import time
-from datetime import timedelta, datetime
+from datetime import timedelta
 
 import anymarkup
 import feedparser
@@ -192,7 +192,6 @@ class RssPlugin(PluginBase):
                 headers={
                     'User-Agent': USER_AGENT,
                 },
-                verify=False
             )
         return feedparser.parse(response.text)
 

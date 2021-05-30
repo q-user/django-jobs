@@ -1,4 +1,4 @@
 try:
     from .dev import *
-except:
+except ImportError:
     from .prod import *
