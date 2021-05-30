@@ -36,8 +36,9 @@ class AggregateContentTest(TestCase):
         a = Article.objects.latest('id')
         self.assertIsNotNone(a.picture)
 
+    # pylint: disable=no-self-use
     @mock.patch.object(DataSource, 'get_data')
-    def test_task_handles_duplicated_url(self, get_data_mock):  # noqa: R0201
+    def test_task_handles_duplicated_url(self, get_data_mock):
         ArticleFactory(url='https://hh.ru/vacancy/26546774')
         data = [
             {
@@ -50,7 +51,8 @@ class AggregateContentTest(TestCase):
         get_data_mock.return_value = data
         AggregateContent().run()
 
-    def test_task_handles_empty_url(self):  # noqa: R0201
+    # pylint: disable=no-self-use
+    def test_task_handles_empty_url(self):
         data = [{
             'source_datetime': datetime.datetime(2021, 4, 12, 11, 19, 17,
                                                  tzinfo=datetime.timezone(
