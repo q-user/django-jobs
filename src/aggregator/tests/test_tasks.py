@@ -49,3 +49,15 @@ class AggregateContentTest(TestCase):
         ]
         get_data_mock.return_value = data
         AggregateContent().run()
+
+    def test_task_handles_empty_url(self):
+        data = [{
+            'source_datetime': datetime.datetime(2021, 4, 12, 11, 19, 17, tzinfo=datetime.timezone(datetime.timedelta(seconds=10800))),
+            'text': 'Компания «BOW GROUP» ищет хорошего специалиста на вакансию «Python developer / Python разработчик». От 80 000 ₽ до 120 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #backend, #middle, #Python, #ООП, #Git, #SQL, #PostgreSQL, #Restfulapi, #Django, #Websockets.',
+            'title': 'Требуется «Python developer / Python разработчик» (от 80 000 до 120 000 ₽)',
+            'url': ''
+        }]
+        AggregateContent.save_data(
+            data,
+            DataSource.objects.first()
+        )
