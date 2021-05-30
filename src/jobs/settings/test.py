@@ -1,4 +1,3 @@
-# flake8: noqa: F401, F405
 import shutil
 import tempfile
 
