@@ -22,7 +22,7 @@ class AggregateContent(app.Task):
             task = PeriodicTask.objects.filter(
                 kwargs__contains=f'"datasource_id": {datasource.id}').first()
             if task and task.interval.every < 60 and task.interval.period == 'minutes':
-                task.interval, created = IntervalSchedule.objects.get_or_create(
+                task.interval, _ = IntervalSchedule.objects.get_or_create(
                     every=task.interval.every + 1,
                     period='minutes'
                 )

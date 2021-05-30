@@ -16,9 +16,9 @@ def download_image(url, upload_to):
     if not os.path.exists(path):
         os.makedirs(path)
     absolute_path = os.path.join(path, filename)
-    r, h = urlretrieve(
+    urlretrieve(
         url,
-        absolute_path
+        str(absolute_path)
     )
     return os.path.join(upload_to, filename)
 

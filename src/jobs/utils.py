@@ -12,9 +12,9 @@ def download_image(url, media_path):
     if not os.path.exists(path):
         os.makedirs(path)
     try:
-        r, h = urlretrieve(
+        urlretrieve(
             url,
-            os.path.join(path, filename)
+            str(os.path.join(path, filename))
         )
     except urllib.error.HTTPError:
         return ''
