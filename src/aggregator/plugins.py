@@ -192,7 +192,6 @@ class RssPlugin(PluginBase):
                 headers={
                     'User-Agent': USER_AGENT,
                 },
-                verify=False
             )
         return feedparser.parse(response.text)
 

@@ -16,7 +16,7 @@ class ArticleAdmin(ImportExportMixin, ModelAdmin):
     ordering = ['-source_datetime']
     resource_class = ArticleResource
 
-    def article_url(self, obj):
+    def article_url(self, obj):  # noqa: R0201
         return format_html('<a href="%s" target="_blank">%s</a>' % (obj.url, obj.url))
 
     article_url.short_description = "Оригинал записи"
