@@ -1,6 +1,6 @@
 import re
 import time
-from datetime import timedelta, datetime
+from datetime import timedelta
 
 import anymarkup
 import feedparser

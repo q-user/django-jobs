@@ -1,0 +1,7 @@
+[flake8]
+filename: *.py
+per-file-ignores=
+    src/jobs/settings/prod.py: F405
+    src/jobs/settings/test.py: F405
+    src/jobs/settings/prod.py: F405
+

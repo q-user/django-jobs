@@ -1,4 +1,4 @@
 try:
-    from .dev import *
+    from .dev import *  # noqa: F401
 except:
-    from .prod import *
+    from .prod import *  # noqa: F401
