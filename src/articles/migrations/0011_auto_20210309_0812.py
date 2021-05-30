@@ -32,8 +32,8 @@ def move_pictures(apps, schema_editor):
         # Обработка изображений из интернета
         picture = None
         if a.icon_url and a.icon_url.startswith('http'):
-            id = picture_map.get(a.icon_url, None)
-            if id is None:
+            picture_id = picture_map.get(a.icon_url, None)
+            if picture_id is None:
                 try:
                     image = download_image(a.icon_url, upload_to)
                     picture = Picture.objects.create(
@@ -46,13 +46,13 @@ def move_pictures(apps, schema_editor):
                     a.save()
                     continue
             else:
-                picture = Picture.objects.get(id=id)
+                picture = Picture.objects.get(id=picture_id)
 
         # Обработка локальных изображений
         else:
             url = str(a.source.icon)
-            id = picture_map.get(url, None)
-            if id is None:
+            picture_id = picture_map.get(url, None)
+            if picture_id is None:
                 # Если файла нет, нужно его переместить и создать
                 # новый инстанс Picture
 
@@ -70,7 +70,7 @@ def move_pictures(apps, schema_editor):
                     url: picture.id
                 })
             else:
-                picture = Picture.objects.get(id=id)
+                picture = Picture.objects.get(id=picture_id)
 
         a.picture = picture
         a.save()

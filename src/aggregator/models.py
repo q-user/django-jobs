@@ -88,7 +88,7 @@ class DataSource(models.Model):
             path = os.path.join(settings.MEDIA_ROOT, self.icon.field.upload_to)
             if not os.path.exists(path):
                 os.makedirs(path)
-            r, h = urlretrieve(
+            urlretrieve(
                 self.icon_url,
                 os.path.join(path, filename)
             )

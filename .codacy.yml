@@ -1,0 +1,3 @@
+---
+exclude_paths:
+  src/jobs/settings/__init__.py

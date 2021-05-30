@@ -16,7 +16,7 @@ def forwards_func(apps, schema_editor):
     with open(fixture) as f:
         data = json.load(f)
         for source in data:
-            schedule, created = IntervalSchedule.objects.get_or_create(
+            schedule, _ = IntervalSchedule.objects.get_or_create(
                 every=20,
                 period=MINUTES
             )
