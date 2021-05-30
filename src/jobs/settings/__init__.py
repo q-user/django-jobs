@@ -1,4 +1,5 @@
+# flake8: noqa: F401, F405
 try:
-    from .dev import *  # noqa: F401
+    from .dev import *
 except:
-    from .prod import *  # noqa: F401
+    from .prod import *

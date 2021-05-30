@@ -1,3 +1,4 @@
+# flake8: noqa: F401, F405
 import sentry_sdk
 from sentry_sdk.integrations.celery import CeleryIntegration
 from sentry_sdk.integrations.django import DjangoIntegration
