@@ -4,8 +4,8 @@ import os
 import shutil
 import urllib
 from urllib.parse import urlsplit
-from urllib.request import urlretrieve
 
+import requests
 from django.conf import settings
 from django.db import migrations
 
@@ -16,17 +16,19 @@ def download_image(url, upload_to):
     if not os.path.exists(path):
         os.makedirs(path)
     absolute_path = os.path.join(path, filename)
-    urlretrieve(
-        url,
-        str(absolute_path)
-    )
+
+    r = requests.get(url)
+    with open(str(absolute_path), 'wb') as f:
+        f.write(r.content)
+
     return os.path.join(upload_to, filename)
 
 
 def move_pictures(apps, schema_editor):
     Article = apps.get_model('articles', 'Article')
     Picture = apps.get_model('articles', 'Picture')
-    upload_to = [f.upload_to for f in Picture._meta.fields if f.name == 'image'][0]
+    upload_to = \
+    [f.upload_to for f in Picture._meta.fields if f.name == 'image'][0]
     picture_map = {}
     for a in Article.objects.all().iterator():
         # Обработка изображений из интернета

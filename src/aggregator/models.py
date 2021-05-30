@@ -1,8 +1,8 @@
 import json
 import os
 from urllib.parse import urlsplit, urlparse
-from urllib.request import urlretrieve
 
+import requests
 from django.conf import settings
 from django.contrib.postgres.fields import ArrayField
 from django.core.validators import validate_image_file_extension
@@ -32,7 +32,8 @@ class SourceConfiguration(models.Model):
         blank=True,
         default=list
     )
-    time_format = models.CharField(max_length=48, null=False, blank=True, default='')
+    time_format = models.CharField(max_length=48, null=False, blank=True,
+                                   default='')
     text_format = models.CharField(
         max_length=10,
         choices=TextFormat.choices,
@@ -57,8 +58,10 @@ class DataSource(models.Model):
         upload_to='datasource_icons/',
         validators=[validate_image_file_extension]
     )
-    icon_url = models.URLField(verbose_name='Иконка из интернета', null=True, blank=True)
-    plugin = models.CharField(max_length=250, choices=PluginBase.get_plugins_choices())
+    icon_url = models.URLField(verbose_name='Иконка из интернета', null=True,
+                               blank=True)
+    plugin = models.CharField(max_length=250,
+                              choices=PluginBase.get_plugins_choices())
 
     configuration = models.OneToOneField(
         SourceConfiguration,
@@ -66,7 +69,8 @@ class DataSource(models.Model):
         null=True
     )
     last_use_time = models.DateTimeField(auto_now=True)
-    task = models.ForeignKey(PeriodicTask, on_delete=models.CASCADE, null=True, blank=True)
+    task = models.ForeignKey(PeriodicTask, on_delete=models.CASCADE, null=True,
+                             blank=True)
 
     class Meta:
         ordering = ('last_use_time',)
@@ -88,17 +92,18 @@ class DataSource(models.Model):
             path = os.path.join(settings.MEDIA_ROOT, self.icon.field.upload_to)
             if not os.path.exists(path):
                 os.makedirs(path)
-            urlretrieve(
-                self.icon_url,
-                os.path.join(path, filename)
-            )
+
+            r = requests.get(self.icon_url)
+            with open(os.path.join(path, filename), 'wb') as f:
+                f.write(r.content)
 
             self.icon = os.path.join(self.icon.field.upload_to, filename)
             self.icon_url = ''
         super().save(force_insert, force_update, using, update_fields)
 
 
-@receiver(post_save, sender=DataSource, dispatch_uid='datasource_create_periodic_task')
+@receiver(post_save, sender=DataSource,
+          dispatch_uid='datasource_create_periodic_task')
 def create_periodic_task(sender, instance, created, **kwargs):
     if created:
         schedule, created = IntervalSchedule.objects.get_or_create(
