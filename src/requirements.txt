@@ -1,5 +1,5 @@
 anymarkup==0.8.1
-asgiref==3.3.4
+asgiref==3.4.1
 beautifulsoup4==4.10.0
 celery==5.2.3
 chardet==4.0.0
