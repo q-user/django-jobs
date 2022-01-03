@@ -101,16 +101,17 @@ services:
 
   nginx:
     restart: unless-stopped
-    image: jonasal/nginx-certbot:latest
+    image: jonasal/nginx-certbot:3.0-alpine
     container_name: nginx
     ports:
-      - 80:80
-      - 443:443
+      - "80:80"
+      - "443:443"
     env_file:
       - config/.envfile
     volumes:
       - ./src:/app
-      - ./config/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx:/etc/nginx/user_conf.d:ro
+      - ./nginx/dhparams.pem:/etc/letsencrypt/dhparams/dhparams.pem
       - letsencrypt:/etc/letsencrypt
     depends_on:
       - web
