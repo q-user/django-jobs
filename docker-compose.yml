@@ -11,7 +11,7 @@ services:
     volumes:
       - ./src:/app
     env_file:
-      - config/.envfile
+      - .envfile
     links:
       - db
     depends_on:
@@ -27,7 +27,7 @@ services:
   db:
     image: postgres:12-alpine
     env_file:
-      - config/.envfile
+      - .envfile
     volumes:
       - db-data:/var/lib/postgresql/data
     container_name: db
@@ -47,7 +47,7 @@ services:
     volumes:
       - ./src:/app
     env_file:
-      - config/.envfile
+      - .envfile
     links:
       - db
       - redis
@@ -69,7 +69,7 @@ services:
     volumes:
       - ./src:/app
     env_file:
-      - config/.envfile
+      - .envfile
     links:
       - db
       - redis
@@ -107,7 +107,7 @@ services:
       - "80:80"
       - "443:443"
     env_file:
-      - config/.envfile
+      - .envfile
     volumes:
       - ./src:/app
       - ./nginx:/etc/nginx/user_conf.d:ro

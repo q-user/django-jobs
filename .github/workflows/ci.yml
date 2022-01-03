@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Setup test envfile
-        run: touch config/.envfile
+        run: touch .envfile
       - name: Build the docker-compose stack
         run: docker-compose up -d
       - name: Check running containers
@@ -30,16 +30,16 @@ jobs:
       POSTGRES_DB: test_db
     steps:
       - uses: actions/checkout@v1
-      - name: Set up Python 3.8
+      - name: Set up Python 3.10
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.10
       - name: Setup test envfile
-        run: touch config/.envfile
+        run: touch .envfile
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r config/requirements.txt
+          pip install -r src/requirements.txt
       - name: Run tests
         run: cd src && python manage.py test --settings=jobs.settings.test
 
@@ -81,8 +81,8 @@ jobs:
           rsync -avz --exclude=.git -e "ssh -i ../private.key" . user@${DEPLOY_HOST}:~/dj
       - name: Create envfile
         run: |
-          ssh -i ../private.key user@${DEPLOY_HOST} "cd dj/config && touch .envfile"
-          echo ${ENVFILE} | ssh -i ../private.key user@${DEPLOY_HOST} "tr ' ' '\n' | cat > dj/config/.envfile"
+          ssh -i ../private.key user@${DEPLOY_HOST} "touch .envfile"
+          echo ${ENVFILE} | ssh -i ../private.key user@${DEPLOY_HOST} "tr ' ' '\n' | cat > dj/.envfile"
       - name: Run docker-compose
         run: |
           ssh -i ../private.key user@${DEPLOY_HOST} "cd dj && chmod +x container-utility.sh && bash container-utility.sh --reset"
