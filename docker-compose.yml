@@ -111,7 +111,6 @@ services:
     volumes:
       - ./src:/app
       - ./nginx:/etc/nginx/user_conf.d:ro
-      - ./nginx/dhparams.pem:/etc/letsencrypt/dhparams/dhparams.pem
       - letsencrypt:/etc/letsencrypt
     depends_on:
       - web
