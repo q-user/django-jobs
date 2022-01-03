@@ -1,10 +1,10 @@
 anymarkup==0.8.1
 asgiref==3.4.1
 beautifulsoup4==4.10.0
-celery==5.2.3
+celery==5.1.2
 chardet==4.0.0
 Django==3.2.10
-django-celery-beat==2.2.1
+django-celery-beat==2.1.0
 django-debug-toolbar==3.2.4
 django-el-pagination==3.3.0
 django-import-export==2.7.1
@@ -12,14 +12,12 @@ django-json-widget==1.1.1
 django-redis==5.2.0
 django-timezone-field==4.2.1
 factory-boy==3.2.1
-Faker==11.1.0
 feedparser==6.0.8
 hypercorn==0.13.2
 langdetect==1.0.9
 Markdown==3.3.6
 Pillow==9.0.0
 psycopg2-binary==2.9.3
-pytz==2021.3
 redis==4.1.0
 requests==2.26.0
 sentry-sdk==1.5.1
