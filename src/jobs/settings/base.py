@@ -170,3 +170,5 @@ LOGGING = {
 TESTING_MODE = None
 
 DEFAULT_USER_AGENT = 'django-jobs.ru aggregator'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
