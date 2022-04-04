@@ -101,7 +101,7 @@ services:
 
   nginx:
     restart: unless-stopped
-    image: jonasal/nginx-certbot:3.0-alpine
+    image: jonasal/nginx-certbot:3-alpine
     container_name: nginx
     ports:
       - "80:80"
