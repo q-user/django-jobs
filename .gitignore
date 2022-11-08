@@ -90,4 +90,4 @@ src/media/article_icons/*
 !src/media/article_icons/.gitkeep
 !src/media/cache/.gitkeep
 src/celerybeat.pid
-config/.envfile
+.envfile

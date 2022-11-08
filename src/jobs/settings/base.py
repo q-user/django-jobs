@@ -172,3 +172,6 @@ TESTING_MODE = None
 DEFAULT_USER_AGENT = 'django-jobs.ru aggregator'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+DEBUG = True if os.environ.get('DEBUG') == '1' else False
+THUMBNAIL_DEBUG = True if os.environ.get('DEBUG') == '1' else False
